@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="NewsStats" List="113" Url="_catalogs/wp">
+    <File Path="NewsStats\NewsStats.webpart" Url="NewsStaisticsWebParts_NewsStats.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="c7c8fa7e-4613-4056-9c35-5ae7e522ad90" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="NewsStaisticsWebParts.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="NewsStaisticsWebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=76113819e8097dfc" Namespace="NewsStaisticsWebParts.NewestNews" TypeName="*" />
+        <SafeControl Assembly="NewsStaisticsWebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=76113819e8097dfc" Namespace="NewsStaisticsWebParts.NewsStats" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="NewsStaisticsWebParts_NewsestNews\Feature.xml" />
+    <FeatureManifest Location="NewsStaisticsWebParts_NewsStats\Feature.xml" />
+  </FeatureManifests>
+</Solution>

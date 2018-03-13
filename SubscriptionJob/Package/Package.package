@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="f7cd736a-d993-440d-be1f-8ec8460328b2" solutionId="f7cd736a-d993-440d-be1f-8ec8460328b2" resetWebServer="false" name="SubscriptionJob" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="ce812de7-943f-4837-aab2-c4e655541923" />
+    <featureReference itemId="6f19197e-3a7c-4145-808a-7ccf29b50992" />
+  </features>
+</package>

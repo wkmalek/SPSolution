@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field
+       List="{5b5bd5fe-9a70-438d-85b6-0ec4434ad3aa}"
+       ShowField="ID"
+       ID="{21b42c62-3d70-4f81-bede-a3403c01b159}"
+       Name="NewsLookup"
+       DisplayName="News Lookup"
+       Type="Lookup"
+       SourceID="{5b69cca5-c4ed-4977-b673-b5436d994e77}" 
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

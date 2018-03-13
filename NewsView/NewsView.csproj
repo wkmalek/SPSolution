@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A355665-69F5-4E50-BB62-45F1003A1904}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewsView</RootNamespace>
+    <AssemblyName>NewsView</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NewsCommentsWebPart\NewsCommentsWebPart.cs" />
+    <Compile Include="NewsCommentsWebPart\NewsCommentsWebPartUserControl.ascx.cs">
+      <DependentUpon>NewsCommentsWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsCommentsWebPart\NewsCommentsWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>NewsCommentsWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewsViewWebPart\NewsViewWebPart.cs" />
+    <Compile Include="NewsViewWebPart\NewsViewWebPartUserControl.ascx.cs">
+      <DependentUpon>NewsViewWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsViewWebPart\NewsViewWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>NewsViewWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\ListNewsView\ListNewsView.feature">
+      <FeatureId>{36efe64b-2a6a-4732-bac0-cc3ead8d181c}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="NewsCommentsWebPart\NewsCommentsWebPart.webpart" />
+    <None Include="NewsCommentsWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{80cbd99a-b1e4-421e-8209-a14bc2cbbc40}</SharePointProjectItemId>
+    </None>
+    <None Include="NewsStyleCss\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e9c8ef29-35f2-43d5-bcba-5a13b297e8a9}</SharePointProjectItemId>
+    </None>
+    <None Include="NewsViewWebPart\NewsViewWebPart.webpart" />
+    <None Include="NewsViewWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{baa2634c-8140-4288-a8aa-5328e19f64d1}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{972014e5-28f6-4118-84f5-9646330c2641}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\ListNewsView\ListNewsView.Template.xml">
+      <DependentUpon>ListNewsView.feature</DependentUpon>
+    </Content>
+    <Content Include="NewsCommentsWebPart\Elements.xml" />
+    <Content Include="NewsCommentsWebPart\NewsCommentsWebPartUserControl.ascx" />
+    <Content Include="NewsStyleCss\Elements.xml" />
+    <Content Include="NewsStyleCss\ListViewWPStyle.css" />
+    <Content Include="NewsViewWebPart\Elements.xml" />
+    <Content Include="NewsViewWebPart\NewsViewWebPartUserControl.ascx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

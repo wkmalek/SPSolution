@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="c47f0e5c-2271-464b-b8b0-bada971d2af9" Scope="Site" Title="NewsStaisticsWebParts NewestNews">
+  <ElementManifests>
+    <ElementManifest Location="NewestNews\Elements.xml" />
+    <ElementFile Location="NewestNews\NewestNews.webpart" />
+    <ElementManifest Location="NewestNewsStyle\Elements.xml" />
+    <ElementFile Location="NewestNewsStyle\Style.css" />
+    <ElementFile Location="NewestNewsStyle\images.jpg" />
+  </ElementManifests>
+</Feature>

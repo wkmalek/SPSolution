@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="NewsViewWebPart" List="113" Url="_catalogs/wp">
+    <File Path="NewsViewWebPart\NewsViewWebPart.webpart" Url="NewsViewWebPart.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+  <CustomAction Location="ScriptLink"
+                ScriptBlock="document.write('&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;~sitecollection/NewsStyleCss/ListViewWPStyle.css&quot; /&gt;');"
+                Sequence="100"/>
+</Elements>

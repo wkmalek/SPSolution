@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="NewestNewsStyle\" Type="ElementManifest" />
+    <ProjectItemFile Source="Style.css" Target="NewestNewsStyle\" Type="ElementFile" />
+    <ProjectItemFile Source="images.jpg" Target="NewestNewsStyle\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

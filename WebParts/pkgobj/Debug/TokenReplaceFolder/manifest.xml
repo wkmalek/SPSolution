@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="56b7e96c-9549-4189-927e-8f87aad958b3" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="WebParts.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="WebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1030d625f785d81b" Namespace="WebParts.NewsFeedVer2" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\200x150.gif" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\ad125x125.jpg" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\ad468x60.gif" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\details.gif" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\divider.gif" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\header1.gif" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\header2.gif" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\headerbg.gif" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\logo.gif" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\navigation.gif" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\readmore.gif" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\search.gif" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\_featured.jpg" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\_flickr1.jpg" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\_flickr2.jpg" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\_flickr3.jpg" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\_flickr4.jpg" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\_flickr5.jpg" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\_flickr6.jpg" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\_thumb1.jpg" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\_thumb2.jpg" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\_thumb3.jpg" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\_thumb4.jpg" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\_thumb5.jpg" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\_thumb6.jpg" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\images\_video.jpg" />
+    <TemplateFile Location="Layouts\WebParts\NewsFeed\style.css" />
+    <TemplateFile Location="FEATURES\PublishingResources\CQWPCustomItemStyle.xsl" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="NewsFeed_NewsFeedWebPart\Feature.xml" />
+  </FeatureManifests>
+</Solution>

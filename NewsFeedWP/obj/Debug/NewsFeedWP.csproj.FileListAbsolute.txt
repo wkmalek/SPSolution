@@ -1,0 +1,14 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsFeedWP\bin\Debug\NewsFeedWP.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsFeedWP\bin\Debug\NewsFeedWP.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsFeedWP\bin\Debug\Microsoft.SharePoint.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsFeedWP\bin\Debug\Microsoft.SharePoint.Search.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsFeedWP\bin\Debug\Microsoft.Web.CommandUI.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsFeedWP\bin\Debug\Microsoft.BusinessData.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsFeedWP\bin\Debug\Microsoft.SharePoint.Security.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsFeedWP\bin\Debug\Microsoft.SharePoint.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsFeedWP\bin\Debug\Microsoft.SharePoint.Search.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsFeedWP\bin\Debug\Microsoft.BusinessData.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsFeedWP\bin\Debug\Microsoft.SharePoint.Security.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsFeedWP\obj\Debug\NewsFeedWP.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsFeedWP\obj\Debug\NewsFeedWP.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsFeedWP\obj\Debug\NewsFeedWP.csprojResolveAssemblyReference.cache

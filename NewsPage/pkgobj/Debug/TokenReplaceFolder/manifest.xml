@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="b4bae6b6-589c-4168-8735-9030035abfa2" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="NewsPage.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="SiteTemplates\MainSD\default.aspx" />
+    <TemplateFile Location="SiteTemplates\MainSD\Xml\onet.xml" />
+    <TemplateFile Location="1033\xml\webtemp_MainSD.xml" />
+  </TemplateFiles>
+</Solution>

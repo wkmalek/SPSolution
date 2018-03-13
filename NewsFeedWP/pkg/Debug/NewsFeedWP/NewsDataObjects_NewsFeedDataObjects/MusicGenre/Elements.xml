@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{5326855e-370a-4a17-9262-0c46d3cc2118}"
+       Name="MusicGenre"
+       DisplayName="Music genre"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns"
+    Overwrite="TRUE">
+  </Field>
+</Elements>

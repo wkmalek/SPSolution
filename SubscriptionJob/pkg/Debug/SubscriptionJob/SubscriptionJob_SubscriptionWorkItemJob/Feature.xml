@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="a8172dfa-c2cf-4179-945b-3ab1302c6771" ReceiverAssembly="SubscriptionJob, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dbccab200e08a58d" ReceiverClass="SubscriptionJob.Features.SubscriptionWorkItemJob.SubscriptionWorkItemJobEventReceiver" Scope="Web" Title="SubscriptionJob Feature1"></Feature>

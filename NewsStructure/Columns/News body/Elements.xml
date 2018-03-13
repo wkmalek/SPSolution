@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{14574ec2-1ca8-4b78-a620-ef1c13a98649}"
+       Name="News body"
+       DisplayName="News body"
+       Type="Note"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

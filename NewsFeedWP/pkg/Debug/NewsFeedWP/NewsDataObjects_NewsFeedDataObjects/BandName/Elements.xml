@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{832dcaad-e1e9-4a50-8831-ba4e0c8aa8e1}"
+       Name="BandName"
+       DisplayName="Band name"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns"
+       Overwrite="TRUE">
+  </Field>
+</Elements>

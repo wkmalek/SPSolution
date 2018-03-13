@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c7c8fa7e-4613-4056-9c35-5ae7e522ad90" solutionId="c7c8fa7e-4613-4056-9c35-5ae7e522ad90" resetWebServer="false" name="NewsStaisticsWebParts" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="f05b409a-a24f-47b4-8000-309d5a2306df" />
+    <featureReference itemId="d7c81be4-f183-4d53-89fc-fa36c40ef918" />
+  </features>
+</package>

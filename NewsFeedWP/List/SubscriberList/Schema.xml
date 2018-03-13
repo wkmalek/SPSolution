@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="SubscriberList" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/SubscriberList" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100E5F73251E5CC488EBB1BBF1E547B2B3E" Name="Subscriber" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{5928ff1f-daa1-406c-b4a9-190485a448cb}" DisplayName="$Resources:core,User_ID;" Required="TRUE" Name="User" Sealed="TRUE" /><FieldRef ID="{ee821779-274c-4481-ab25-77e14eb6e3ba}" DisplayName="Subscribe Date" Required="TRUE" Name="SubscribeDate" /></FieldRefs></ContentType></ContentTypes>
+    <Fields>
+       
+    <Field ID="{5928ff1f-daa1-406c-b4a9-190485a448cb}" Name="User" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="User" Group="$Resources:core,Base_Columns;" DisplayName="$Resources:core,User_ID;" Required="TRUE" Sealed="TRUE" Type="Integer" /><Field ID="{ee821779-274c-4481-ab25-77e14eb6e3ba}" Name="SubscribeDate" DisplayName="Subscribe Date" Type="DateTime" Required="TRUE" Group="Custom Site Columns"></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+          
+        <FieldRef Name="Attachments"></FieldRef><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="User" /><FieldRef Name="SubscribeDate" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{d18d81c8-3f9e-4e9c-a89d-cf47cddacd32}"
+       Name="NewsID"
+       DisplayName="News ID"
+       Type="Text"
+       Required="TRUE"
+       Group="Custom Site Columns"
+    Overwrite="TRUE">
+  </Field>
+</Elements>

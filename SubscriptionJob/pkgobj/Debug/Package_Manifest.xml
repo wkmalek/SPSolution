@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="f7cd736a-d993-440d-be1f-8ec8460328b2" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="SubscriptionJob.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="SubscriptionJob_SubscriptionJob\Feature.xml" />
+    <FeatureManifest Location="SubscriptionJob_SubscriptionWorkItemJob\Feature.xml" />
+  </FeatureManifests>
+</Solution>

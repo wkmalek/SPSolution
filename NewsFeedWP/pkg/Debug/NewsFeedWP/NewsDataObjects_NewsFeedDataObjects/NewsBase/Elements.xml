@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100E7C219E579514259839E0CB6060C8E44" Name="NewsBase" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0" Overwrite="TRUE">
+    <FieldRefs>
+      <FieldRef ID="{01904b03-d5e7-40d4-b14e-3d7150506789}" DisplayName="News title" Required="TRUE" Name="NewsTitle" />
+      <FieldRef ID="{14574ec2-1ca8-4b78-a620-ef1c13a98649}" DisplayName="News body" Required="TRUE" Name="NewsBody" />
+      <FieldRef ID="{f0eb7a47-399b-497d-a293-2ffed1d73431}" DisplayName="Category" Required="TRUE" Name="Category" />
+      <FieldRef ID="{9F8B4EE0-84B7-42c6-A094-5CBDE2115EB9}" DisplayName="$Resources:core,_DCDateCreated;" Required="TRUE" Description="$Resources:core,_DCDateCreatedDesc;" Name="_DCDateCreated" Format="DateTime" />
+      <FieldRef ID="{810DBD02-BBF5-4c67-B1CE-5AD7C5A512B2}" DisplayName="$Resources:core,_DCDateModified;" Description="$Resources:core,_DCDateModifiedDesc;" Name="_DCDateModified" Format="DateTime" />
+      <FieldRef ID="{ef2b23f7-e943-4c54-92b0-565121e06ac5}" DisplayName="Is New" Required="TRUE" Hidden="TRUE" Name="IsNew" />
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+        <FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+          <Display>BlogForm</Display>
+          <Edit>BlogForm</Edit>
+          <New>BlogForm</New>
+        </FormTemplates>
+      </XmlDocument>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+        <FormUrls xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+          <Display>Lists/ListNews/News.aspx</Display>
+        </FormUrls>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+</Elements>

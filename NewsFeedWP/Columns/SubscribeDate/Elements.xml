@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{ee821779-274c-4481-ab25-77e14eb6e3ba}"
+       Name="SubscribeDate"
+       DisplayName="Subscribe Date"
+       Type="DateTime"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

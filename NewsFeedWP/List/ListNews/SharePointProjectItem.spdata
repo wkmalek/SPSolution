@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.ListDefinition" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="ListNews\" Type="ElementManifest" />
+    <ProjectItemFile Source="Schema.xml" Target="ListNews\" Type="ElementFile" />
+    <ProjectItemFile Source="News.aspx" Target="ListNews\" Type="ElementFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="NewsFeedWP.List.ListNews" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+  <ExtensionData>
+    <ExtensionDataItem Key="Microsoft.VisualStudio.SharePoint.ListSettings.ListFieldsContentTypeID" Value="0x010060fa962adad749348c594e69d4ace2a7" />
+  </ExtensionData>
+</ProjectItem>

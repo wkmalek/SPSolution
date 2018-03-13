@@ -1,0 +1,13 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsPage\bin\Debug\NewsPage.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsPage\bin\Debug\NewsPage.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsPage\bin\Debug\Microsoft.SharePoint.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsPage\bin\Debug\Microsoft.SharePoint.Search.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsPage\bin\Debug\Microsoft.Web.CommandUI.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsPage\bin\Debug\Microsoft.BusinessData.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsPage\bin\Debug\Microsoft.SharePoint.Security.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsPage\bin\Debug\Microsoft.SharePoint.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsPage\bin\Debug\Microsoft.SharePoint.Search.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsPage\bin\Debug\Microsoft.BusinessData.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsPage\bin\Debug\Microsoft.SharePoint.Security.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsPage\obj\Debug\NewsPage.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsPage\obj\Debug\NewsPage.pdb

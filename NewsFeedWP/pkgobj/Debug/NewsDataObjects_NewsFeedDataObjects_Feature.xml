@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="47c8c03e-c1f6-4ef6-9ab9-1d9e3326ab51" Scope="Web" Title="NewsFeedDataObjects">
+  <ElementManifests>
+    <ElementManifest Location="BandName\Elements.xml" />
+    <ElementManifest Location="Category\Elements.xml" />
+    <ElementManifest Location="CompanyName\Elements.xml" />
+    <ElementManifest Location="FinanceScope\Elements.xml" />
+    <ElementManifest Location="MusicGenre\Elements.xml" />
+    <ElementManifest Location="NewsBody\Elements.xml" />
+    <ElementManifest Location="NewsTitle\Elements.xml" />
+    <ElementManifest Location="ScienceBranch\Elements.xml" />
+    <ElementManifest Location="ScienceType\Elements.xml" />
+    <ElementManifest Location="NewsBase\Elements.xml" />
+    <ElementManifest Location="MusicNews\Elements.xml" />
+    <ElementManifest Location="ScienceNews\Elements.xml" />
+    <ElementManifest Location="FinanceNews\Elements.xml" />
+    <ElementManifest Location="ListNewsInstance\Elements.xml" />
+    <ElementManifest Location="ListNews\Elements.xml" />
+    <ElementFile Location="ListNews\Schema.xml" />
+    <ElementFile Location="ListNews\News.aspx" />
+    <ElementManifest Location="NewsID\Elements.xml" />
+    <ElementManifest Location="Readed\Elements.xml" />
+    <ElementManifest Location="SubscribeDate\Elements.xml" />
+    <ElementManifest Location="Subscriber\Elements.xml" />
+    <ElementManifest Location="SubscribeElement\Elements.xml" />
+    <ElementManifest Location="SubscriberListInstance\Elements.xml" />
+    <ElementManifest Location="SubscriberList\Elements.xml" />
+    <ElementFile Location="SubscriberList\Schema.xml" />
+    <ElementManifest Location="SubscribeElementListInstance\Elements.xml" />
+    <ElementManifest Location="SubscribeElementList\Elements.xml" />
+    <ElementFile Location="SubscribeElementList\Schema.xml" />
+  </ElementManifests>
+</Feature>

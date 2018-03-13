@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="NewestNewsStyle">
+    <File Path="NewestNewsStyle\Style.css" Url="NewestNewsStyle/Style.css" />
+    <File Path="NewestNewsStyle\images.jpg" Url="NewestNewsStyle/images.jpg" />
+  </Module>
+</Elements>

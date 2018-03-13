@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="dc8bdf24-31b1-42a2-b107-464fe25ebe04" Scope="Site" Title="NewsView NewsViewWP">
+  <ElementManifests>
+    <ElementManifest Location="NewsViewWebPart\Elements.xml" />
+    <ElementFile Location="NewsViewWebPart\NewsViewWebPart.webpart" />
+    <ElementManifest Location="NewsCommentsWebPart\Elements.xml" />
+    <ElementFile Location="NewsCommentsWebPart\NewsCommentsWebPart.webpart" />
+    <ElementManifest Location="NewsStyleCss\Elements.xml" />
+    <ElementFile Location="NewsStyleCss\ListViewWPStyle.css" />
+  </ElementManifests>
+</Feature>

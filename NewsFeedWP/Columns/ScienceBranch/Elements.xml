@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{bfc1dcd5-72e5-4f74-ad71-ae4189d5c4c3}"
+       Name="ScienceBranch"
+       DisplayName="Science branch"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns"
+    Overwrite="TRUE">
+  </Field>
+</Elements>
