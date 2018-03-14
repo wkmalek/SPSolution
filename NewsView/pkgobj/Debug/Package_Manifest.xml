@@ -5,12 +5,16 @@
       <SafeControls>
         <SafeControl Assembly="NewsView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9da26fdeb1039315" Namespace="NewsView.NewsViewWebPart" TypeName="*" />
         <SafeControl Assembly="NewsView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9da26fdeb1039315" Namespace="NewsView.NewsCommentsWebPart.cs" TypeName="*" />
+        <SafeControl Assembly="NewsView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9da26fdeb1039315" Namespace="NewsView.AddNewCommentWebPart" TypeName="*" />
+        <SafeControl Assembly="NewsView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9da26fdeb1039315" Namespace="NewsView.ImageGalleryWebPart" TypeName="*" />
       </SafeControls>
     </Assembly>
   </Assemblies>
   <TemplateFiles>
     <TemplateFile Location="CONTROLTEMPLATES\NewsView\NewsViewWebPart\NewsViewWebPartUserControl.ascx" />
     <TemplateFile Location="CONTROLTEMPLATES\NewsView\NewsCommentsWebPart\NewsCommentsWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\NewsView\AddNewCommentWebPart\AddNewCommentWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\NewsView\ImageGalleryWebPart\ImageGalleryWebPartUserControl.ascx" />
   </TemplateFiles>
   <FeatureManifests>
     <FeatureManifest Location="NewsView_ListNewsView\Feature.xml" />

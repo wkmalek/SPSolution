@@ -59,6 +59,14 @@
     <Compile Include="AddNewCommentWebPart\AddNewCommentWebPartUserControl.ascx.designer.cs">
       <DependentUpon>AddNewCommentWebPartUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImageGalleryWebPart\ImageGalleryWebPart.cs" />
+    <Compile Include="ImageGalleryWebPart\ImageGalleryWebPartUserControl.ascx.cs">
+      <DependentUpon>ImageGalleryWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageGalleryWebPart\ImageGalleryWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>ImageGalleryWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewsCommentsWebPart\NewsCommentsWebPart.cs" />
     <Compile Include="NewsCommentsWebPart\NewsCommentsWebPartUserControl.ascx.cs">
       <DependentUpon>NewsCommentsWebPartUserControl.ascx</DependentUpon>
@@ -85,6 +93,10 @@
     <None Include="Features\ListNewsView\ListNewsView.feature">
       <FeatureId>{36efe64b-2a6a-4732-bac0-cc3ead8d181c}</FeatureId>
     </None>
+    <None Include="ImageGalleryWebPart\ImageGalleryWebPart.webpart" />
+    <None Include="ImageGalleryWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1b0bcf5d-3965-4837-a97a-41752bfdf541}</SharePointProjectItemId>
+    </None>
     <None Include="key.snk" />
     <None Include="NewsCommentsWebPart\NewsCommentsWebPart.webpart" />
     <None Include="NewsCommentsWebPart\SharePointProjectItem.spdata">
@@ -110,6 +122,8 @@
     <Content Include="Features\ListNewsView\ListNewsView.Template.xml">
       <DependentUpon>ListNewsView.feature</DependentUpon>
     </Content>
+    <Content Include="ImageGalleryWebPart\Elements.xml" />
+    <Content Include="ImageGalleryWebPart\ImageGalleryWebPartUserControl.ascx" />
     <Content Include="NewsCommentsWebPart\Elements.xml" />
     <Content Include="NewsCommentsWebPart\NewsCommentsWebPartUserControl.ascx" />
     <Content Include="NewsStyleCss\AddCommentsStyle.css" />

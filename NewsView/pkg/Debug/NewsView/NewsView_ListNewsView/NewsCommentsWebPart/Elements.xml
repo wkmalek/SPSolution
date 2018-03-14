@@ -5,4 +5,7 @@
       <Property Name="Group" Value="Custom" />
     </File>
   </Module>
+  <!--<CustomAction Location="ScriptLink"
+                ScriptBlock="document.write('&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;~sitecollection/NewsStyleCss/CommentsStyle.css&quot; /&gt;');"
+                Sequence="100"/>-->
 </Elements>

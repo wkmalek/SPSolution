@@ -2,5 +2,7 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="NewsStyleCss">
     <File Path="NewsStyleCss\ListViewWPStyle.css" Url="NewsStyleCss/ListViewWPStyle.css" />
+    <File Path="NewsStyleCss\CommentsStyle.css" Url="NewsStyleCss/CommentsStyle.css" />
+    <File Path="NewsStyleCss\AddCommentsStyle.css" Url="NewsStyleCss/AddCommentsStyle.css" />
   </Module>
 </Elements>

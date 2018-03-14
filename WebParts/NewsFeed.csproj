@@ -52,6 +52,14 @@
     <Reference Include="Microsoft.SharePoint" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategoryListWebPart\CategoryListWebPart.cs" />
+    <Compile Include="CategoryListWebPart\CategoryListWebPartUserControl.ascx.cs">
+      <DependentUpon>CategoryListWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryListWebPart\CategoryListWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>CategoryListWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Features\NewsFeedWebPart\NewsFeedWebPart.EventReceiver.cs">
       <DependentUpon>NewsFeedWebPart.feature</DependentUpon>
     </Compile>
@@ -59,6 +67,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="CategoryListWebPart\CategoryListWebPart.webpart" />
+    <None Include="CategoryListWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0778dcc1-d828-41b5-abfb-4b7e2b03ab16}</SharePointProjectItemId>
+    </None>
     <None Include="Features\NewsFeedWebPart\NewsFeedWebPart.feature">
       <FeatureId>{c368702c-61f7-4676-87ba-37a921534d9f}</FeatureId>
     </None>
@@ -81,6 +93,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CategoryListWebPart\CategoryListWebPartUserControl.ascx" />
+    <Content Include="CategoryListWebPart\Elements.xml" />
     <Content Include="Features\NewsFeedWebPart\NewsFeedWebPart.Template.xml">
       <DependentUpon>NewsFeedWebPart.feature</DependentUpon>
     </Content>

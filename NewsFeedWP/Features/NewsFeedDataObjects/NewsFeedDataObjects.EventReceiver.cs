@@ -72,23 +72,23 @@ namespace NewsFeedWP.Features.NewsFeedDataObjects
             imgLib.Fields.Add(lkp);
             web.Update();
 
-            SPContentTypeId CommentCTID = new SPContentTypeId("0x0100DA033945862B4092808FDBF1A9A77F98");
-            SPContentType CommentCT = web.ContentTypes[CommentCTID];
-            if (CommentCT == null)
-            {
-                CommentCT = new SPContentType(CommentCTID,web.ContentTypes,"Comments");
-                web.ContentTypes.Add(CommentCT);
+            //SPContentTypeId CommentCTID = new SPContentTypeId("0x0100DA033945862B4092808FDBF1A9A77F98");
+            //SPContentType CommentCT = web.ContentTypes[CommentCTID];
+            //if (CommentCT == null)
+            //{
+            //    CommentCT = new SPContentType(CommentCTID,web.ContentTypes,"Comments");
+            //    web.ContentTypes.Add(CommentCT);
 
-                AddFieldLink(lkp, CommentCT);
-                SPField user = web.Fields["tp_Author"];
-                AddFieldLink(user, CommentCT);
-                SPField body = web.Fields["News body"];
-                AddFieldLink(body, CommentCT);
-                SPField date = web.Fields["tp_Created"];
-                AddFieldLink(date, CommentCT);
-                CommentCT.Update();
-                web.Update();
-            }
+            //    AddFieldLink(lkp, CommentCT);
+            //    SPField user = web.Fields["tp_Author"];
+            //    AddFieldLink(user, CommentCT);
+            //    SPField body = web.Fields["News body"];
+            //    AddFieldLink(body, CommentCT);
+            //    SPField date = web.Fields["tp_Created"];
+            //    AddFieldLink(date, CommentCT);
+            //    CommentCT.Update();
+            //    web.Update();
+            //}
         }
 
         static void AddFieldLink(SPField field, SPContentType contentType)

@@ -13,7 +13,8 @@ namespace NewsView.NewsViewWebPart
             string elementID = Page.Request.QueryString["ID"];
             string listID = Page.Request.QueryString["List"];
             string contentTypeID = Page.Request.QueryString["ContentTypeID"];
-
+            if (listID == null)
+                listID = SPContext.Current.Web.Lists["ListNews"].ID.ToString();
             SPListItemCollection list = SPContext.Current.Web.Lists.GetList(new Guid(listID), true).Items;
             SPListItem news = list[Int32.Parse(elementID)-1];
 
