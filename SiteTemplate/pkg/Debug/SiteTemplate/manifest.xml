@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="2dbf8890-e2bb-424c-a677-e049377baefe" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="SiteTemplate.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="SiteTemplates\SiteDef\default.aspx" />
+    <TemplateFile Location="SiteTemplates\SiteDef\Xml\onet.xml" />
+    <TemplateFile Location="1033\xml\webtemp_SiteDef.xml" />
+  </TemplateFiles>
+</Solution>

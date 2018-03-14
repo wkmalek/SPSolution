@@ -1,0 +1,13 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SiteTemplate\bin\Debug\SiteTemplate.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SiteTemplate\bin\Debug\SiteTemplate.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SiteTemplate\bin\Debug\Microsoft.SharePoint.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SiteTemplate\bin\Debug\Microsoft.SharePoint.Search.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SiteTemplate\bin\Debug\Microsoft.Web.CommandUI.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SiteTemplate\bin\Debug\Microsoft.BusinessData.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SiteTemplate\bin\Debug\Microsoft.SharePoint.Security.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SiteTemplate\bin\Debug\Microsoft.SharePoint.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SiteTemplate\bin\Debug\Microsoft.SharePoint.Search.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SiteTemplate\bin\Debug\Microsoft.BusinessData.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SiteTemplate\bin\Debug\Microsoft.SharePoint.Security.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SiteTemplate\obj\Debug\SiteTemplate.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SiteTemplate\obj\Debug\SiteTemplate.pdb

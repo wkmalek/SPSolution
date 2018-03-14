@@ -51,6 +51,14 @@
     <Reference Include="Microsoft.SharePoint" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddNewCommentWebPart\AddNewCommentWebPart.cs" />
+    <Compile Include="AddNewCommentWebPart\AddNewCommentWebPartUserControl.ascx.cs">
+      <DependentUpon>AddNewCommentWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddNewCommentWebPart\AddNewCommentWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>AddNewCommentWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewsCommentsWebPart\NewsCommentsWebPart.cs" />
     <Compile Include="NewsCommentsWebPart\NewsCommentsWebPartUserControl.ascx.cs">
       <DependentUpon>NewsCommentsWebPartUserControl.ascx</DependentUpon>
@@ -70,6 +78,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AddNewCommentWebPart\AddNewCommentWebPart.webpart" />
+    <None Include="AddNewCommentWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c7f7a11e-00ee-4b61-af11-e03d85d23db9}</SharePointProjectItemId>
+    </None>
     <None Include="Features\ListNewsView\ListNewsView.feature">
       <FeatureId>{36efe64b-2a6a-4732-bac0-cc3ead8d181c}</FeatureId>
     </None>
@@ -93,11 +105,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddNewCommentWebPart\AddNewCommentWebPartUserControl.ascx" />
+    <Content Include="AddNewCommentWebPart\Elements.xml" />
     <Content Include="Features\ListNewsView\ListNewsView.Template.xml">
       <DependentUpon>ListNewsView.feature</DependentUpon>
     </Content>
     <Content Include="NewsCommentsWebPart\Elements.xml" />
     <Content Include="NewsCommentsWebPart\NewsCommentsWebPartUserControl.ascx" />
+    <Content Include="NewsStyleCss\AddCommentsStyle.css" />
+    <Content Include="NewsStyleCss\CommentsStyle.css" />
     <Content Include="NewsStyleCss\Elements.xml" />
     <Content Include="NewsStyleCss\ListViewWPStyle.css" />
     <Content Include="NewsViewWebPart\Elements.xml" />

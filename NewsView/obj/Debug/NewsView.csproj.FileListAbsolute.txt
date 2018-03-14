@@ -11,3 +11,16 @@ C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsView
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsView\bin\Debug\Microsoft.SharePoint.Security.xml
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsView\obj\Debug\NewsView.dll
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\NewsFeedWP\NewsView\obj\Debug\NewsView.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsView\bin\Debug\NewsView.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsView\bin\Debug\NewsView.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsView\bin\Debug\Microsoft.SharePoint.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsView\bin\Debug\Microsoft.SharePoint.Search.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsView\bin\Debug\Microsoft.Web.CommandUI.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsView\bin\Debug\Microsoft.BusinessData.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsView\bin\Debug\Microsoft.SharePoint.Security.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsView\bin\Debug\Microsoft.SharePoint.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsView\bin\Debug\Microsoft.SharePoint.Search.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsView\bin\Debug\Microsoft.BusinessData.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsView\bin\Debug\Microsoft.SharePoint.Security.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsView\obj\Debug\NewsView.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsView\obj\Debug\NewsView.pdb

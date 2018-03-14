@@ -52,6 +52,9 @@
     <Reference Include="Microsoft.SharePoint" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\NewsFeedDataObjects\NewsFeedDataObjects.EventReceiver.cs">
+      <DependentUpon>NewsFeedDataObjects.feature</DependentUpon>
+    </Compile>
     <Compile Include="List\ListNews\News.aspx.cs">
       <DependentUpon>News.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -82,9 +85,6 @@
     <None Include="Columns\NewsID\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{0eb96baa-f9e7-4123-8238-1fbebc80d361}</SharePointProjectItemId>
     </None>
-    <None Include="Columns\NewsLookup\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{090a91df-d539-4b4e-a0e2-ceda71c9a597}</SharePointProjectItemId>
-    </None>
     <None Include="Columns\Readed\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{d2ca73a3-97fd-4871-a54f-de8b7e7da166}</SharePointProjectItemId>
     </None>
@@ -96,6 +96,9 @@
     </None>
     <None Include="Columns\SubscribeDate\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{a75d0386-c870-4d39-be50-f4da0221b5f1}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentType\Comment\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ad734cf8-e3ca-4bdd-a3d5-af892652f1db}</SharePointProjectItemId>
     </None>
     <None Include="ContentType\FinanceNews\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{919f3edc-4c83-42be-a9ce-7d2d8eb04c2d}</SharePointProjectItemId>
@@ -128,14 +131,11 @@
     <None Include="Columns\NewsBody\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{20734fbe-408b-4189-a642-e925f72b26d7}</SharePointProjectItemId>
     </None>
-    <None Include="List\ImageLibrary\ImageLibraryInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{8ed3de50-0ba1-4176-ad5c-2014f8347ac8}</SharePointProjectItemId>
+    <None Include="List\Categories\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1fba2422-95ac-44af-abfc-b92423d5be26}</SharePointProjectItemId>
     </None>
     <None Include="List\ImageLibrary\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7188e5de-73e7-4c09-b7ac-a30e44d1ec20}</SharePointProjectItemId>
-    </None>
-    <None Include="List\ListNews\ListNewsInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{571326b6-561c-42fb-9b4b-9b67a5c5816f}</SharePointProjectItemId>
     </None>
     <None Include="List\ListNews\NewDataER\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5849d32d-fa42-4465-bb64-e1138dd2d54b}</SharePointProjectItemId>
@@ -177,11 +177,11 @@
     <Content Include="Columns\FinanceScope\Elements.xml" />
     <Content Include="Columns\MusicGenre\Elements.xml" />
     <Content Include="Columns\NewsID\Elements.xml" />
-    <Content Include="Columns\NewsLookup\Elements.xml" />
     <Content Include="Columns\Readed\Elements.xml" />
     <Content Include="Columns\ScienceBranch\Elements.xml" />
     <Content Include="Columns\ScienceType\Elements.xml" />
     <Content Include="Columns\SubscribeDate\Elements.xml" />
+    <Content Include="ContentType\Comment\Elements.xml" />
     <Content Include="ContentType\FinanceNews\Elements.xml" />
     <Content Include="ContentType\MusicNews\Elements.xml" />
     <Content Include="ContentType\NewsBase\Elements.xml" />
@@ -199,16 +199,16 @@
     </Content>
     <Content Include="Columns\NewsBody\Elements.xml" />
     <Content Include="Columns\NewsTitle\Elements.xml" />
+    <Content Include="List\Categories\Elements.xml" />
+    <Content Include="List\Categories\Schema.xml" />
     <Content Include="List\ImageLibrary\EditDlg.htm" />
     <Content Include="List\ImageLibrary\Elements.xml" />
     <Content Include="List\ImageLibrary\FileDlg.htm" />
-    <Content Include="List\ImageLibrary\ImageLibraryInstance\Elements.xml" />
     <Content Include="List\ImageLibrary\Repair.aspx" />
     <Content Include="List\ImageLibrary\Schema.xml" />
     <Content Include="List\ImageLibrary\Upload.aspx" />
     <Content Include="List\ListNews\News.aspx" />
     <Content Include="List\ListNews\Elements.xml" />
-    <Content Include="List\ListNews\ListNewsInstance\Elements.xml" />
     <Content Include="List\ListNews\NewDataER\Elements.xml" />
     <Content Include="List\ListNews\NewDataWorkItemER\Elements.xml" />
     <Content Include="List\ListNews\Schema.xml" />

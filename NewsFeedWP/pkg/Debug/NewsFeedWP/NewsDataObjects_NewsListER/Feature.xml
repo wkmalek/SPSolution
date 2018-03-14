@@ -2,13 +2,8 @@
 <Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="5a756284-1268-4416-84ef-c556a5bdfce0" Scope="Web" Title="NewsDataObjects_EventReceiver">
   <ElementManifests>
     <ElementManifest Location="NewDataER\Elements.xml" />
-    <ElementManifest Location="ImageLibraryInstance\Elements.xml" />
-    <ElementManifest Location="ImageLibrary\Elements.xml" />
-    <ElementFile Location="ImageLibrary\Schema.xml" />
-    <ElementFile Location="ImageLibrary\EditDlg.htm" />
-    <ElementFile Location="ImageLibrary\FileDlg.htm" />
-    <ElementFile Location="ImageLibrary\Repair.aspx" />
-    <ElementFile Location="ImageLibrary\Upload.aspx" />
-    <ElementManifest Location="NewsLookup\Elements.xml" />
+    <ElementManifest Location="Categories\Elements.xml" />
+    <ElementFile Location="Categories\Schema.xml" />
+    <ElementManifest Location="Comment\Elements.xml" />
   </ElementManifests>
 </Feature>

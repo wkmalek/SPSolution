@@ -3,5 +3,7 @@
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="NewsStyleCss\" Type="ElementManifest" />
     <ProjectItemFile Source="ListViewWPStyle.css" Target="NewsStyleCss\" Type="ElementFile" />
+    <ProjectItemFile Source="CommentsStyle.css" Target="NewsStyleCss\" Type="ElementFile" />
+    <ProjectItemFile Source="AddCommentsStyle.css" Target="NewsStyleCss\" Type="ElementFile" />
   </Files>
 </ProjectItem>

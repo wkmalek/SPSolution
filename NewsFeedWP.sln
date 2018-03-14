@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubscriptionJob", "Subscrip
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsStaisticsWebParts", "NewsStaisticsWebParts\NewsStaisticsWebParts.csproj", "{1C5E0041-2E31-455E-AC59-C643A25C48F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteTemplate", "SiteTemplate\SiteTemplate.csproj", "{6F26A4E4-442B-4D34-AE90-AE3A4D9CBEF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,12 @@ Global
 		{1C5E0041-2E31-455E-AC59-C643A25C48F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C5E0041-2E31-455E-AC59-C643A25C48F6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1C5E0041-2E31-455E-AC59-C643A25C48F6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6F26A4E4-442B-4D34-AE90-AE3A4D9CBEF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F26A4E4-442B-4D34-AE90-AE3A4D9CBEF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F26A4E4-442B-4D34-AE90-AE3A4D9CBEF3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6F26A4E4-442B-4D34-AE90-AE3A4D9CBEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F26A4E4-442B-4D34-AE90-AE3A4D9CBEF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F26A4E4-442B-4D34-AE90-AE3A4D9CBEF3}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

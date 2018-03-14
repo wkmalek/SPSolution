@@ -44,6 +44,8 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
@@ -57,9 +59,20 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SubJob.cs" />
+    <Compile Include="SubscribeButton\SubscribeButton.cs" />
+    <Compile Include="SubscribeButton\SubscribeButtonUserControl.ascx.cs">
+      <DependentUpon>SubscribeButtonUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubscribeButton\SubscribeButtonUserControl.ascx.designer.cs">
+      <DependentUpon>SubscribeButtonUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="SubWorkItemJob.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Features\SubscribeButton\SubscribeButton.feature">
+      <FeatureId>{7a20a13a-71a8-4054-84a1-bea6396d5624}</FeatureId>
+    </None>
     <None Include="Features\SubscriptionWorkItemJob\SubscriptionWorkItemJob.feature">
       <FeatureId>{6f19197e-3a7c-4145-808a-7ccf29b50992}</FeatureId>
     </None>
@@ -73,15 +86,24 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
+    <None Include="SubscribeButton\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{aa401b00-d9c4-44bc-a61f-600985d389d4}</SharePointProjectItemId>
+    </None>
+    <None Include="SubscribeButton\SubscribeButton.webpart" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Features\SubscribeButton\SubscribeButton.Template.xml">
+      <DependentUpon>SubscribeButton.feature</DependentUpon>
+    </Content>
     <Content Include="Features\SubscriptionWorkItemJob\SubscriptionWorkItemJob.Template.xml">
       <DependentUpon>SubscriptionWorkItemJob.feature</DependentUpon>
     </Content>
     <Content Include="Features\SubscriptionJob\SubscriptionJob.Template.xml">
       <DependentUpon>SubscriptionJob.feature</DependentUpon>
     </Content>
+    <Content Include="SubscribeButton\Elements.xml" />
+    <Content Include="SubscribeButton\SubscribeButtonUserControl.ascx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
