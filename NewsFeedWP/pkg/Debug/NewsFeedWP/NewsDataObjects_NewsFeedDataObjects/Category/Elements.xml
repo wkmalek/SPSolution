@@ -1,12 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
-  <Field
-       ID="{f0eb7a47-399b-497d-a293-2ffed1d73431}"
-       Name="Categoryy"
-       DisplayName="Categoryy"
-       Type="Lookup"
-       Required="TRUE"
-       Group="Custom Site Columns"
-    Overwrite="TRUE">
-  </Field>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100D8D146FA2D6F48A0AFE4E1AA8612191E" Name="Category" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{521bdec3-8c9b-4cfd-8fed-559b4a80c755}" DisplayName="Category Name" Required="TRUE" Name="CategoryName" />
+    </FieldRefs>
+  </ContentType>
 </Elements>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{9af24c40-3f26-47f5-bd52-841017fbf1a9}"
+       Hidden ="False"
+       Overwrite ="TRUE"
+       Name="NewsLookup"
+       DisplayName="News Lookup"
+       List="List/ListNews"
+       ShowField="ID"
+       Type="Lookup"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

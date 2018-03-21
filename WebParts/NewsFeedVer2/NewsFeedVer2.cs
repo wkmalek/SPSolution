@@ -18,22 +18,25 @@ namespace WebParts.NewsFeedVer2
         protected override void ModifyXsltArgumentList(ArgumentClassWrapper argList)
         {
             //argList.SetParameter("ItemXslLink", "", "/Style Library/XSL Style Sheets/CQWPCustomItemStyle.xsl");
-            this.ItemXslLink = "/Style Library/XSL Style Sheets/CQWPCustomItemStyle.xsl";
+            //this.ItemXslLink = "/Style Library/XSL Style Sheets/CQWPCustomItemStyle.xsl";
             //this.ListName = "NewsList";
             //this.ListGuid = "ace22ef0-168b-41d0-90f5-bc8391615029";
             //this.ContentTypeBeginsWithId = "0x01";
             //this.ServerTemplate = "10001";
-            this.ItemStyle = "Custom";
-            this.GroupStyle = "Custom";
+            //this.ItemStyle = "Custom";
+            //this.GroupStyle = "Custom";
             this.ShowUntargetedItems = true;
             //this.WebUrl = "~sitecollection";
             this.UseCopyUtil = true;
+            
             base.ModifyXsltArgumentList(argList);
         }
 
         protected override void OnLoad(EventArgs e)
         {
             this.CommonViewFields = "NewsBody,Note;NewsTitle,Text;CompanyName,Text;";
+            if (String.IsNullOrEmpty(Page.Request.QueryString["Category"]))
+                FilterField1 = "";
             base.OnLoad(e);
         }
 

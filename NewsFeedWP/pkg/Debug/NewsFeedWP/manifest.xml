@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="7fe3ed30-b9b6-4ec6-9bd4-934b63ab29e8" SharePointProductVersion="14.0">
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="7fe3ed30-b9b6-4ec6-9bd4-934b63ab29e8" ResetWebServer="TRUE" SharePointProductVersion="14.0">
   <Assemblies>
     <Assembly Location="NewsFeedWP.dll" DeploymentTarget="GlobalAssemblyCache">
       <SafeControls>
@@ -8,8 +8,8 @@
     </Assembly>
   </Assemblies>
   <FeatureManifests>
-    <FeatureManifest Location="NewsDataObjects_NewsFeedDataObjects\Feature.xml" />
     <FeatureManifest Location="NewsDataObjects_NewsListER\Feature.xml" />
     <FeatureManifest Location="NewsDataObjects_NewListWorkItemER\Feature.xml" />
+    <FeatureManifest Location="NewsDataObjects_NewsFeedDataObjects\Feature.xml" />
   </FeatureManifests>
 </Solution>

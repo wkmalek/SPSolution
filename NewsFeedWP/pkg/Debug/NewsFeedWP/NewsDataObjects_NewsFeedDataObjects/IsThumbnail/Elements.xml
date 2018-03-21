@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{ae54808c-e2eb-4c8e-bdd6-13f8b662acbf}"
+       Name="IsThumbnail"
+       DisplayName="Is Thumbnail"
+       Type="Boolean"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

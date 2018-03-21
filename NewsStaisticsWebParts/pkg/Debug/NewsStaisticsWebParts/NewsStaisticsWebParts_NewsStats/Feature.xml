@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="b6cd25d6-e233-4ad6-8e19-1413aea29c51" Scope="Site" Title="NewsStaisticsWebParts NewsStats">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="NewsStaisticsWebParts NewsStats" Id="b6cd25d6-e233-4ad6-8e19-1413aea29c51" Scope="Site">
   <ElementManifests>
     <ElementManifest Location="NewsStats\Elements.xml" />
     <ElementFile Location="NewsStats\NewsStats.webpart" />

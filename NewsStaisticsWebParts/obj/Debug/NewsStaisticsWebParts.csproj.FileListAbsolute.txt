@@ -27,6 +27,5 @@ C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsStai
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsStaisticsWebParts\bin\Debug\Microsoft.SharePoint.Security.xml
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsStaisticsWebParts\bin\Debug\Microsoft.SharePoint.Search.xml
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsStaisticsWebParts\bin\Debug\Microsoft.BusinessData.xml
-C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsStaisticsWebParts\obj\Debug\NewsStaisticsWebParts.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsStaisticsWebParts\obj\Debug\NewsStaisticsWebParts.dll
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsStaisticsWebParts\obj\Debug\NewsStaisticsWebParts.pdb

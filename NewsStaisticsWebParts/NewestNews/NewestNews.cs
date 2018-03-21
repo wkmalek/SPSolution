@@ -17,7 +17,7 @@ namespace NewsStaisticsWebParts.NewestNews
 
         protected override void CreateChildControls()
         {
-            
+            //Use create child control or use visual webpart, also rewrite to caml
         }
 
         protected override void Render(HtmlTextWriter writer)

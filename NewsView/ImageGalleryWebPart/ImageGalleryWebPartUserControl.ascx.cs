@@ -15,7 +15,7 @@ namespace NewsView.ImageGalleryWebPart
             SPQuery query = new SPQuery();
             string elementID = Page.Request.QueryString["ID"];
             //field name programmatically
-            query.Query = "<Where><Eq><FieldRef Name='NewsLookup12'/><Value Type='Lookup'>" + elementID +"</Value></Eq></Where>";
+            query.Query = "<Where><Eq><FieldRef Name='NewsLookup'/><Value Type='Lookup'>" + elementID +"</Value></Eq></Where>";
             SPListItemCollection items = imageLib.GetItems(query);
 
             Repeater.DataSource = items;

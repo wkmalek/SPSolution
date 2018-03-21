@@ -31,11 +31,14 @@ namespace SubscriptionJob
             //Get list of subscribers
             //Foreach one get newses after certain date and without existing ones
             //Add to subscribers list
-
-            using (SPSite site = new SPSite(siteUrl))
+            foreach(SPSite site in WebApplication.Sites)
+            using (site)
             {
                 using (SPWeb web = site.RootWeb)
                 {
+                    //check if list exist, if yes do smth
+                    //also rewrite to caml
+                    //also it should probably use some repo or smth
                     SPList subscribersList = web.Lists["SubscriberList"];
                     SPList postList = web.Lists["ListNews"];
                     SPList elementList = web.Lists["SubscribeElementList"];

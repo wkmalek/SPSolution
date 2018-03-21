@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="9ccbc6db-31b8-42bd-808c-f3a80fd1fa91" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="Repository.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="Models.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="PocoModels.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="TestProj.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="TestProj, Version=1.0.0.0, Culture=neutral, PublicKeyToken=394003994f9b671d" Namespace="TestProj.VisualWebPart" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\TestProj\VisualWebPart\VisualWebPartUserControl.ascx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="TestProj_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

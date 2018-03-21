@@ -3,20 +3,32 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using Microsoft.SharePoint;
+using SharedLib;
+using NewsView.Presenter;
+using Models.Comments;
+using System.Collections.Generic;
 
 namespace NewsView.NewsCommentsWebPart.cs
 {
-    public partial class NewsCommentsWebPartUserControl : UserControl
+    public partial class NewsCommentsWebPartUserControl : MyUserControl<CommentsViewPresenter, ICommentsView>, ICommentsView
     {
+        //
+        public CommentsNewsViewModel comments
+        {
+            get { return comments; }
+            set
+            {
+                comments = value;
+                Repeater.DataSource = comments;
+                Repeater.DataBind();
+            }
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            SPList comments = SPContext.Current.Web.Lists["Comments"];
-            SPQuery query = new SPQuery();
-            string postID = Page.Request.QueryString["ID"];
-            query.Query = "<Where><Eq><FieldRef Name=\"NewsLookup\" /><Value Type=\"Lookup\">"+ postID +"</Value></Eq></Where>";
-            SPListItemCollection items = comments.GetItems(query);
-            Repeater.DataSource = items;
-            Repeater.DataBind();
+            CommentsViewPresenter _presenter = new CommentsViewPresenter();
+            //_presenter._pView = this;
+            //_presenter.LoadComments();
         }
     }
 }

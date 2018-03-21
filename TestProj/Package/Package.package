@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9ccbc6db-31b8-42bd-808c-f3a80fd1fa91" solutionId="9ccbc6db-31b8-42bd-808c-f3a80fd1fa91" resetWebServer="false" name="TestProj" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="Repository.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Repository\Repository.csproj" />
+    <projectOutputAssembly location="Models.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Models\Models.csproj" />
+    <projectOutputAssembly location="PocoModels.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\PocoModels\PocoModels.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="3ff1d325-d698-4322-be33-f7754d145667" />
+  </features>
+</package>

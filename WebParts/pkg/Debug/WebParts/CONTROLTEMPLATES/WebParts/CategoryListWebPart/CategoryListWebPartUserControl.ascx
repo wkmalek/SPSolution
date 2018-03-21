@@ -7,3 +7,9 @@
 <%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CategoryListWebPartUserControl.ascx.cs" Inherits="WebParts.CategoryListWebPart.CategoryListWebPartUserControl" %>
 
+<asp:HyperLink runat="server" NavigateUrl= "~/default.aspx"><asp:Label runat="server" Text="All"/><br></asp:HyperLink>
+<asp:Repeater runat="server" ID="Repeater">
+    <ItemTemplate>
+        <asp:HyperLink runat="server" NavigateUrl='<%# "~/default.aspx?Category=" + Eval("[\"Category\"]") %>'><asp:Label runat="server" Text='<%# Eval("[\"Category\"]") %>'/><br></asp:HyperLink>
+    </ItemTemplate>
+</asp:Repeater>

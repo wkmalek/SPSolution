@@ -1,17 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="dc8bdf24-31b1-42a2-b107-464fe25ebe04" Scope="Site" Title="NewsView NewsViewWP">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="NewsView NewsViewWP" Id="dc8bdf24-31b1-42a2-b107-464fe25ebe04" Scope="Site">
   <ElementManifests>
     <ElementManifest Location="NewsViewWebPart\Elements.xml" />
     <ElementFile Location="NewsViewWebPart\NewsViewWebPart.webpart" />
-    <ElementManifest Location="NewsCommentsWebPart\Elements.xml" />
-    <ElementFile Location="NewsCommentsWebPart\NewsCommentsWebPart.webpart" />
     <ElementManifest Location="NewsStyleCss\Elements.xml" />
     <ElementFile Location="NewsStyleCss\ListViewWPStyle.css" />
     <ElementFile Location="NewsStyleCss\CommentsStyle.css" />
     <ElementFile Location="NewsStyleCss\AddCommentsStyle.css" />
     <ElementManifest Location="AddNewCommentWebPart\Elements.xml" />
     <ElementFile Location="AddNewCommentWebPart\AddNewCommentWebPart.webpart" />
-    <ElementManifest Location="ImageGalleryWebPart\Elements.xml" />
-    <ElementFile Location="ImageGalleryWebPart\ImageGalleryWebPart.webpart" />
   </ElementManifests>
 </Feature>

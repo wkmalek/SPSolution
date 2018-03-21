@@ -56,6 +56,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{2ef6b187-0fdd-44e2-8b0c-69848529319b}</FeatureId>
+    </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{950e290c-1994-42f5-b1d8-2def534ad1d0}</FeatureId>
+    </None>
     <None Include="Features\NewsStats\NewsStats.feature">
       <FeatureId>{d7c81be4-f183-4d53-89fc-fa36c40ef918}</FeatureId>
     </None>
@@ -82,6 +88,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
     <Content Include="Features\NewsStats\NewsStats.Template.xml">
       <DependentUpon>NewsStats.feature</DependentUpon>
     </Content>

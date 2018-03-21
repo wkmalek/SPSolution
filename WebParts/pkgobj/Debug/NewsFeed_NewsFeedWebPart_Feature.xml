@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="536fbe73-f651-47e4-b89f-8c0e67862c5a" ReceiverAssembly="WebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1030d625f785d81b" ReceiverClass="WebParts.Features.NewsFeedWebPart.NewsFeedWebPartEventReceiver" Scope="Site" Title="WebParts Feature1">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="WebParts Feature1" Id="536fbe73-f651-47e4-b89f-8c0e67862c5a" ReceiverAssembly="WebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1030d625f785d81b" ReceiverClass="WebParts.Features.NewsFeedWebPart.NewsFeedWebPartEventReceiver" Scope="Site">
   <ElementManifests>
     <ElementManifest Location="NewsFeedVer2\Elements.xml" />
     <ElementManifest Location="CategoryListWebPart\Elements.xml" />
     <ElementFile Location="CategoryListWebPart\CategoryListWebPart.webpart" />
+    <ElementManifest Location="NewsTools\Elements.xml" />
+    <ElementFile Location="NewsTools\NewsTools.webpart" />
   </ElementManifests>
 </Feature>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A0F1589-05F1-431E-B72B-541CD80CE100}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Models</RootNamespace>
+    <AssemblyName>Models</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Models.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Category\CategoriesModel.cs" />
+    <Compile Include="Category\CategoriesViewModel.cs" />
+    <Compile Include="Category\ICategoriesModel.cs" />
+    <Compile Include="Category\SingleCategoryModel.cs" />
+    <Compile Include="Category\SingleCategoryViewModel.cs" />
+    <Compile Include="Comments\CommentNewsModel.cs" />
+    <Compile Include="Comments\CommentNewsViewModel.cs" />
+    <Compile Include="Comments\CommentsNewsModel.cs" />
+    <Compile Include="Comments\CommentsNewsViewModel.cs" />
+    <Compile Include="Comments\ICommentsNewsModel.cs" />
+    <Compile Include="Images\IImagesNewsModel.cs" />
+    <Compile Include="Images\ImagesNewsModel.cs" />
+    <Compile Include="Images\ImagesNewsViewModel.cs" />
+    <Compile Include="Images\ImageNewsViewModel.cs" />
+    <Compile Include="Images\SingleImageNewsModel.cs" />
+    <Compile Include="IModel.cs" />
+    <Compile Include="News\ISingleNewsModel.cs" />
+    <Compile Include="News\NewsViewModel.cs" />
+    <Compile Include="News\SingleNewsModel.cs" />
+    <Compile Include="News\SingleNewsViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubscribeRepository\SingleSubElement.cs" />
+    <Compile Include="SubscribeRepository\SingleSubscriberModel.cs" />
+    <Compile Include="SubscribeRepository\SubscribedElementsModel.cs" />
+    <Compile Include="SubscribeRepository\SubscribersModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PocoModels\PocoModels.csproj">
+      <Project>{8b376010-2dcb-4028-a8cc-8e0024751f2a}</Project>
+      <Name>PocoModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repository\Repository.csproj">
+      <Project>{75472edb-f135-4963-bea9-4e29d1bee9ab}</Project>
+      <Name>Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

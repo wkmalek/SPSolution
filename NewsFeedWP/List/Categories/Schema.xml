@@ -4,12 +4,12 @@
     <ContentTypes>
       
       
-    <ContentType ID="0x0100b12d57f2bf36481ba0029f586abeccec" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{0FC9CACE-C5C2-465d-AE88-B67F2964CA93}" Name="_Category" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+    <ContentType ID="0x0100D8D146FA2D6F48A0AFE4E1AA8612191E" Name="Category" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{521bdec3-8c9b-4cfd-8fed-559b4a80c755}" DisplayName="Category Name" Required="TRUE" Name="CategoryName" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
         <Folder TargetName="Item" />
       </ContentTypeRef></ContentTypes>
     <Fields>
        
-    <Field ID="{0FC9CACE-C5C2-465d-AE88-B67F2964CA93}" Name="_Category" Group="$Resources:core,Document_Columns;" Type="Text" DisplayName="$Resources:core,Category;" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="_Category" Sealed="TRUE" AllowDeletion="TRUE" ShowInFileDlg="FALSE" Required="TRUE" /></Fields>
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{521bdec3-8c9b-4cfd-8fed-559b4a80c755}" Name="CategoryName" DisplayName="Category Name" Type="Text" Required="TRUE" Group="Custom Site Columns"></Field></Fields>
     <Views>
       
       
@@ -37,7 +37,7 @@
         <ViewFields>
           
           
-        <FieldRef Name="Attachments"></FieldRef><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="_Category" /></ViewFields>
+        <FieldRef Name="Attachments"></FieldRef><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="CategoryName" /></ViewFields>
         <Query>
           <OrderBy>
             

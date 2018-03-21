@@ -8,7 +8,4 @@
     <ProjectItemFile Source="Repair.aspx" Target="ImageLibrary\" Type="ElementFile" />
     <ProjectItemFile Source="Upload.aspx" Target="ImageLibrary\" Type="ElementFile" />
   </Files>
-  <ExtensionData>
-    <ExtensionDataItem Key="Microsoft.VisualStudio.SharePoint.ListSettings.ListFieldsContentTypeID" Value="0x0101002e04a6d34c7f4557882ce434eccdd3d7" />
-  </ExtensionData>
 </ProjectItem>

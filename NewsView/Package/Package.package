@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="972014e5-28f6-4118-84f5-9646330c2641" solutionId="972014e5-28f6-4118-84f5-9646330c2641" resetWebServer="false" name="NewsView" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="SharedLib.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\SharedLib\SharedLib.csproj" />
+    <projectOutputAssembly location="Models.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Models\Models.csproj" />
+    <projectOutputAssembly location="PocoModels.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\PocoModels\PocoModels.csproj" />
+  </assemblies>
   <features>
     <featureReference itemId="36efe64b-2a6a-4732-bac0-cc3ead8d181c" />
+    <featureReference itemId="802608c1-f24f-4f09-b2e6-c63357160348" />
   </features>
 </package>

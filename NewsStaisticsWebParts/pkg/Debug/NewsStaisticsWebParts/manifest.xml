@@ -11,5 +11,7 @@
   <FeatureManifests>
     <FeatureManifest Location="NewsStaisticsWebParts_NewsestNews\Feature.xml" />
     <FeatureManifest Location="NewsStaisticsWebParts_NewsStats\Feature.xml" />
+    <FeatureManifest Location="NewsStaisticsWebParts_Feature1\Feature.xml" />
+    <FeatureManifest Location="NewsStaisticsWebParts_Feature2\Feature.xml" />
   </FeatureManifests>
 </Solution>

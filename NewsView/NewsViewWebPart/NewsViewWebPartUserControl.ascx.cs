@@ -3,25 +3,28 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using Microsoft.SharePoint;
+using SharedLib;
+using NewsView.Presenter;
+using SharedLib.Presenter;
+using Models.Images;
+using Models.Comments;
+using System.Collections.Generic;
 
 namespace NewsView.NewsViewWebPart
 {
-    public partial class NewsViewWebPartUserControl : UserControl
+    public partial class NewsViewWebPartUserControl : MyUserControl<NewsViewPresenter, INewsView>, INewsView
     {
+        public string newsTitle { get { return NewsTitle.Text; } set { NewsTitle.Text = value; } }
+        public string postBody { get { return PostBody.Text; } set { PostBody.Text = value; } }
+        public string dateCreated { get { return PostCreatedDate.Text; }set { PostCreatedDate.Text = value; } }
+        public string authorName { get { return AuthorUserName.Text; }set { AuthorUserName.Text = value; } }
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            string elementID = Page.Request.QueryString["ID"];
-            string listID = Page.Request.QueryString["List"];
-            string contentTypeID = Page.Request.QueryString["ContentTypeID"];
-            if (listID == null)
-                listID = SPContext.Current.Web.Lists["ListNews"].ID.ToString();
-            SPListItemCollection list = SPContext.Current.Web.Lists.GetList(new Guid(listID), true).Items;
-            SPListItem news = list[Int32.Parse(elementID)-1];
-
-            NewsTitle.Text = (string)news["NewsTitle"];
-            PostBody.Text = (string) news["NewsBody"];
-            PostCreatedDate.Text = ((DateTime)news["_DCDateCreated"]).ToString();
-            AuthorUserName.Text = (string)news["Editor"];
+            NewsViewPresenter _presenter = new NewsViewPresenter();
+            _presenter._pView = this;
+            _presenter.LoadNews();
         }
     }
 }

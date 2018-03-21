@@ -4,16 +4,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsDataObjects", "NewsFeedWP\NewsDataObjects.csproj", "{A770568E-BE2F-43E9-B8D5-D062B199AB06}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1C5E0041-2E31-455E-AC59-C643A25C48F6} = {1C5E0041-2E31-455E-AC59-C643A25C48F6}
+		{4A355665-69F5-4E50-BB62-45F1003A1904} = {4A355665-69F5-4E50-BB62-45F1003A1904}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsFeed", "WebParts\NewsFeed.csproj", "{D953C18E-A656-4F16-BE27-8AAF73EF04B2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsView", "NewsView\NewsView.csproj", "{4A355665-69F5-4E50-BB62-45F1003A1904}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8B376010-2DCB-4028-A8CC-8E0024751F2A} = {8B376010-2DCB-4028-A8CC-8E0024751F2A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubscriptionJob", "SubscriptionJob\SubscriptionJob.csproj", "{496944F5-EACB-4D38-83B7-9AFEC8B1B9A5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsStaisticsWebParts", "NewsStaisticsWebParts\NewsStaisticsWebParts.csproj", "{1C5E0041-2E31-455E-AC59-C643A25C48F6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteTemplate", "SiteTemplate\SiteTemplate.csproj", "{6F26A4E4-442B-4D34-AE90-AE3A4D9CBEF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{75472EDB-F135-4963-BEA9-4E29D1BEE9AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{5A0F1589-05F1-431E-B72B-541CD80CE100}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLib", "SharedLib\SharedLib.csproj", "{968ED443-6CCC-4537-BF04-1511FBFCFE59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocoModels", "PocoModels\PocoModels.csproj", "{8B376010-2DCB-4028-A8CC-8E0024751F2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +72,24 @@ Global
 		{6F26A4E4-442B-4D34-AE90-AE3A4D9CBEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F26A4E4-442B-4D34-AE90-AE3A4D9CBEF3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6F26A4E4-442B-4D34-AE90-AE3A4D9CBEF3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{75472EDB-F135-4963-BEA9-4E29D1BEE9AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75472EDB-F135-4963-BEA9-4E29D1BEE9AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75472EDB-F135-4963-BEA9-4E29D1BEE9AB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{75472EDB-F135-4963-BEA9-4E29D1BEE9AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75472EDB-F135-4963-BEA9-4E29D1BEE9AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A0F1589-05F1-431E-B72B-541CD80CE100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A0F1589-05F1-431E-B72B-541CD80CE100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A0F1589-05F1-431E-B72B-541CD80CE100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A0F1589-05F1-431E-B72B-541CD80CE100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{968ED443-6CCC-4537-BF04-1511FBFCFE59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{968ED443-6CCC-4537-BF04-1511FBFCFE59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{968ED443-6CCC-4537-BF04-1511FBFCFE59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{968ED443-6CCC-4537-BF04-1511FBFCFE59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B376010-2DCB-4028-A8CC-8E0024751F2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B376010-2DCB-4028-A8CC-8E0024751F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B376010-2DCB-4028-A8CC-8E0024751F2A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8B376010-2DCB-4028-A8CC-8E0024751F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B376010-2DCB-4028-A8CC-8E0024751F2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

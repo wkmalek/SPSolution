@@ -5,11 +5,13 @@
       <SafeControls>
         <SafeControl Assembly="WebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1030d625f785d81b" Namespace="WebParts.NewsFeedVer2" TypeName="*" />
         <SafeControl Assembly="WebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1030d625f785d81b" Namespace="WebParts.CategoryListWebPart" TypeName="*" />
+        <SafeControl Assembly="WebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1030d625f785d81b" Namespace="WebParts.NewsTools" TypeName="*" />
       </SafeControls>
     </Assembly>
   </Assemblies>
   <TemplateFiles>
     <TemplateFile Location="CONTROLTEMPLATES\WebParts\CategoryListWebPart\CategoryListWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\WebParts\NewsTools\NewsToolsUserControl.ascx" />
     <TemplateFile Location="Layouts\WebParts\NewsFeed\images\200x150.gif" />
     <TemplateFile Location="Layouts\WebParts\NewsFeed\images\ad125x125.jpg" />
     <TemplateFile Location="Layouts\WebParts\NewsFeed\images\ad468x60.gif" />

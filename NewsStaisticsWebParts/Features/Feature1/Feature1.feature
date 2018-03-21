@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5c9d74af-4fd9-406b-a04a-1945472f3ee1" featureId="5c9d74af-4fd9-406b-a04a-1945472f3ee1" imageUrl="" scope="Site" solutionId="00000000-0000-0000-0000-000000000000" title="NewsStaisticsWebParts Feature1" version="" deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel" />

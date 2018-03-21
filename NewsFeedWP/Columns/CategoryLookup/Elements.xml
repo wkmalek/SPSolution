@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{46fba876-ce00-4c97-b07e-e77b87348a33}"
+       Hidden ="False"
+       Name="CategoryLookup"
+       DisplayName="Category Lookup"
+       List="Lists/Categories"
+       Overwrite ="TRUE"
+       Type="Lookup"
+       ShowField="CategoryName"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

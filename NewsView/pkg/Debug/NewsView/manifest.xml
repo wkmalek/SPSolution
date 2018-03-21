@@ -1,22 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="972014e5-28f6-4118-84f5-9646330c2641" SharePointProductVersion="14.0">
   <Assemblies>
+    <Assembly Location="SharedLib.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="Models.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="PocoModels.dll" DeploymentTarget="GlobalAssemblyCache" />
     <Assembly Location="NewsView.dll" DeploymentTarget="GlobalAssemblyCache">
       <SafeControls>
         <SafeControl Assembly="NewsView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9da26fdeb1039315" Namespace="NewsView.NewsViewWebPart" TypeName="*" />
-        <SafeControl Assembly="NewsView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9da26fdeb1039315" Namespace="NewsView.NewsCommentsWebPart.cs" TypeName="*" />
         <SafeControl Assembly="NewsView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9da26fdeb1039315" Namespace="NewsView.AddNewCommentWebPart" TypeName="*" />
         <SafeControl Assembly="NewsView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9da26fdeb1039315" Namespace="NewsView.ImageGalleryWebPart" TypeName="*" />
+        <SafeControl Assembly="NewsView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9da26fdeb1039315" Namespace="NewsView.NewsCommentsWebPart.cs" TypeName="*" />
       </SafeControls>
     </Assembly>
   </Assemblies>
   <TemplateFiles>
     <TemplateFile Location="CONTROLTEMPLATES\NewsView\NewsViewWebPart\NewsViewWebPartUserControl.ascx" />
-    <TemplateFile Location="CONTROLTEMPLATES\NewsView\NewsCommentsWebPart\NewsCommentsWebPartUserControl.ascx" />
     <TemplateFile Location="CONTROLTEMPLATES\NewsView\AddNewCommentWebPart\AddNewCommentWebPartUserControl.ascx" />
     <TemplateFile Location="CONTROLTEMPLATES\NewsView\ImageGalleryWebPart\ImageGalleryWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\NewsView\NewsCommentsWebPart\NewsCommentsWebPartUserControl.ascx" />
   </TemplateFiles>
   <FeatureManifests>
     <FeatureManifest Location="NewsView_ListNewsView\Feature.xml" />
+    <FeatureManifest Location="NewsView_Feature1\Feature.xml" />
   </FeatureManifests>
 </Solution>

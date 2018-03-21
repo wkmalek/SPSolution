@@ -15,6 +15,7 @@ namespace NewsStaisticsWebParts.NewsStats
     {
         protected override void CreateChildControls()
         {
+            //Controls.Add;
         }
 
         protected override void Render(HtmlTextWriter writer)

@@ -75,6 +75,7 @@
     <Compile Include="NewsCommentsWebPart\NewsCommentsWebPartUserControl.ascx.designer.cs">
       <DependentUpon>NewsCommentsWebPartUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewsViewWebPart\INewsView.cs" />
     <Compile Include="NewsViewWebPart\NewsViewWebPart.cs" />
     <Compile Include="NewsViewWebPart\NewsViewWebPartUserControl.ascx.cs">
       <DependentUpon>NewsViewWebPartUserControl.ascx</DependentUpon>
@@ -83,12 +84,18 @@
     <Compile Include="NewsViewWebPart\NewsViewWebPartUserControl.ascx.designer.cs">
       <DependentUpon>NewsViewWebPartUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewsCommentsWebPart\ICommentsView.cs" />
+    <Compile Include="Presenter\CommentsViewPresenter.cs" />
+    <Compile Include="Presenter\NewsViewPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="AddNewCommentWebPart\AddNewCommentWebPart.webpart" />
     <None Include="AddNewCommentWebPart\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{c7f7a11e-00ee-4b61-af11-e03d85d23db9}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{802608c1-f24f-4f09-b2e6-c63357160348}</FeatureId>
     </None>
     <None Include="Features\ListNewsView\ListNewsView.feature">
       <FeatureId>{36efe64b-2a6a-4732-bac0-cc3ead8d181c}</FeatureId>
@@ -119,6 +126,9 @@
   <ItemGroup>
     <Content Include="AddNewCommentWebPart\AddNewCommentWebPartUserControl.ascx" />
     <Content Include="AddNewCommentWebPart\Elements.xml" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
     <Content Include="Features\ListNewsView\ListNewsView.Template.xml">
       <DependentUpon>ListNewsView.feature</DependentUpon>
     </Content>
@@ -132,6 +142,16 @@
     <Content Include="NewsStyleCss\ListViewWPStyle.css" />
     <Content Include="NewsViewWebPart\Elements.xml" />
     <Content Include="NewsViewWebPart\NewsViewWebPartUserControl.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{5A0F1589-05F1-431E-B72B-541CD80CE100}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharedLib\SharedLib.csproj">
+      <Project>{968ED443-6CCC-4537-BF04-1511FBFCFE59}</Project>
+      <Name>SharedLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

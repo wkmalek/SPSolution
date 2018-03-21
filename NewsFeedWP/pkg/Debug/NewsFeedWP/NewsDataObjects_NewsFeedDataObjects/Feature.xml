@@ -1,31 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="47c8c03e-c1f6-4ef6-9ab9-1d9e3326ab51" ReceiverAssembly="NewsFeedWP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=10ad000354663770" ReceiverClass="NewsFeedWP.Features.NewsFeedDataObjects.NewsFeedDataObjectsEventReceiver" Scope="Web" Title="NewsFeedDataObjects">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="NewsFeedDataObjects" Id="47c8c03e-c1f6-4ef6-9ab9-1d9e3326ab51" Scope="Web">
   <ElementManifests>
     <ElementManifest Location="BandName\Elements.xml" />
-    <ElementManifest Location="Category\Elements.xml" />
     <ElementManifest Location="CompanyName\Elements.xml" />
     <ElementManifest Location="FinanceScope\Elements.xml" />
     <ElementManifest Location="MusicGenre\Elements.xml" />
     <ElementManifest Location="NewsBody\Elements.xml" />
-    <ElementManifest Location="NewsTitle\Elements.xml" />
+    <ElementManifest Location="Readed\Elements.xml" />
     <ElementManifest Location="ScienceBranch\Elements.xml" />
     <ElementManifest Location="ScienceType\Elements.xml" />
+    <ElementManifest Location="SubscribeDate\Elements.xml" />
+    <ElementManifest Location="CommentBody\Elements.xml" />
+    <ElementManifest Location="IsThumbnail\Elements.xml" />
+    <ElementManifest Location="CategoryName\Elements.xml" />
     <ElementManifest Location="NewsBase\Elements.xml" />
-    <ElementManifest Location="MusicNews\Elements.xml" />
     <ElementManifest Location="ScienceNews\Elements.xml" />
+    <ElementManifest Location="MusicNews\Elements.xml" />
+    <ElementManifest Location="SubscribeElement\Elements.xml" />
+    <ElementManifest Location="Subscriber\Elements.xml" />
     <ElementManifest Location="FinanceNews\Elements.xml" />
+    <ElementManifest Location="NewsImage\Elements.xml" />
+    <ElementManifest Location="Category\Elements.xml" />
+    <ElementManifest Location="CommentCT\Elements.xml" />
     <ElementManifest Location="ListNews\Elements.xml" />
     <ElementFile Location="ListNews\Schema.xml" />
     <ElementFile Location="ListNews\News.aspx" />
-    <ElementManifest Location="NewsID\Elements.xml" />
-    <ElementManifest Location="Readed\Elements.xml" />
-    <ElementManifest Location="SubscribeDate\Elements.xml" />
-    <ElementManifest Location="Subscriber\Elements.xml" />
-    <ElementManifest Location="SubscribeElement\Elements.xml" />
-    <ElementManifest Location="SubscriberListInstance\Elements.xml" />
     <ElementManifest Location="SubscriberList\Elements.xml" />
     <ElementFile Location="SubscriberList\Schema.xml" />
-    <ElementManifest Location="SubscribeElementListInstance\Elements.xml" />
+    <ElementManifest Location="Comments\Elements.xml" />
+    <ElementFile Location="Comments\Schema.xml" />
     <ElementManifest Location="SubscribeElementList\Elements.xml" />
     <ElementFile Location="SubscribeElementList\Schema.xml" />
     <ElementManifest Location="ImageLibrary\Elements.xml" />
@@ -36,5 +39,13 @@
     <ElementFile Location="ImageLibrary\Upload.aspx" />
     <ElementManifest Location="Categories\Elements.xml" />
     <ElementFile Location="Categories\Schema.xml" />
+    <ElementManifest Location="NewsInstance\Elements.xml" />
+    <ElementManifest Location="SubscribeElementListInstance\Elements.xml" />
+    <ElementManifest Location="SubscriberListInstance\Elements.xml" />
+    <ElementManifest Location="CommentsInstance\Elements.xml" />
+    <ElementManifest Location="ImageLibraryInstance\Elements.xml" />
+    <ElementManifest Location="CategoriesInstance\Elements.xml" />
+    <ElementManifest Location="NewDataWorkItemER\Elements.xml" />
+    <ElementManifest Location="NewDataER\Elements.xml" />
   </ElementManifests>
 </Feature>

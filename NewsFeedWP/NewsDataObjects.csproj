@@ -52,9 +52,6 @@
     <Reference Include="Microsoft.SharePoint" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Features\NewsFeedDataObjects\NewsFeedDataObjects.EventReceiver.cs">
-      <DependentUpon>NewsFeedDataObjects.feature</DependentUpon>
-    </Compile>
     <Compile Include="List\ListNews\News.aspx.cs">
       <DependentUpon>News.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -67,11 +64,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Columns\Category\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{933ba61b-eeea-47b8-aafa-e4eb96a32104}</SharePointProjectItemId>
+    <None Include="Columns\CategoryLookup\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{da6044c0-9222-4bdb-8d2b-c589f5cf8837}</SharePointProjectItemId>
     </None>
     <None Include="Columns\BandName\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{216da9f7-9461-4603-ad94-ea18fc0d2b01}</SharePointProjectItemId>
+    </None>
+    <None Include="Columns\CategoryName\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7f8ec8a0-8c5c-45eb-84ab-ceb10c203660}</SharePointProjectItemId>
+    </None>
+    <None Include="Columns\CommentBody\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{84d4e298-4acd-4105-a377-be6c86193cd6}</SharePointProjectItemId>
     </None>
     <None Include="Columns\CompanyName\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{48fe20bb-17f8-44d7-9862-0f550a071035}</SharePointProjectItemId>
@@ -79,11 +82,14 @@
     <None Include="Columns\FinanceScope\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{fdcec969-d4ee-4421-8c57-60e23cbd9357}</SharePointProjectItemId>
     </None>
+    <None Include="Columns\IsThumbnail\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{22c16451-d5e7-414d-bb8e-2b7e2ef613d3}</SharePointProjectItemId>
+    </None>
     <None Include="Columns\MusicGenre\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{bdef062f-a5ef-4852-87c3-eb03e454de44}</SharePointProjectItemId>
     </None>
-    <None Include="Columns\NewsID\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{0eb96baa-f9e7-4123-8238-1fbebc80d361}</SharePointProjectItemId>
+    <None Include="Columns\NewsLookup\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{55691839-daff-4379-b49e-0594c32d7518}</SharePointProjectItemId>
     </None>
     <None Include="Columns\Readed\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{d2ca73a3-97fd-4871-a54f-de8b7e7da166}</SharePointProjectItemId>
@@ -97,8 +103,11 @@
     <None Include="Columns\SubscribeDate\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{a75d0386-c870-4d39-be50-f4da0221b5f1}</SharePointProjectItemId>
     </None>
-    <None Include="ContentType\Comment\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{ad734cf8-e3ca-4bdd-a3d5-af892652f1db}</SharePointProjectItemId>
+    <None Include="ContentType\Category\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{42a353b3-be70-44b1-a189-a251803a7cf7}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentType\CommentCT\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6d258fbd-5c8a-45c2-bbbf-d7938c80126b}</SharePointProjectItemId>
     </None>
     <None Include="ContentType\FinanceNews\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{919f3edc-4c83-42be-a9ce-7d2d8eb04c2d}</SharePointProjectItemId>
@@ -108,6 +117,9 @@
     </None>
     <None Include="ContentType\NewsBase\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5406a1d2-1754-438b-9278-c33dbd0752df}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentType\NewsImage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3c7d623f-ea18-4835-b319-d03a603d8f8b}</SharePointProjectItemId>
     </None>
     <None Include="ContentType\ScienceNews\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{f657ff9c-4755-43e0-9499-cb10800ec734}</SharePointProjectItemId>
@@ -131,11 +143,23 @@
     <None Include="Columns\NewsBody\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{20734fbe-408b-4189-a642-e925f72b26d7}</SharePointProjectItemId>
     </None>
+    <None Include="List\Categories\CategoriesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b9fef451-f67d-488b-811f-00aef7f704b8}</SharePointProjectItemId>
+    </None>
     <None Include="List\Categories\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{1fba2422-95ac-44af-abfc-b92423d5be26}</SharePointProjectItemId>
+      <SharePointProjectItemId>{7c3cf6d7-5e57-427e-abfe-6ced5d22cc10}</SharePointProjectItemId>
+    </None>
+    <None Include="List\Comments\CommentsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{12643ce8-2434-4299-906e-5c5e9ce2867b}</SharePointProjectItemId>
+    </None>
+    <None Include="List\Comments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{adeceb97-c9d8-4cf2-9d3f-b80c21698c9b}</SharePointProjectItemId>
+    </None>
+    <None Include="List\ImageLibrary\ImageLibraryInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{12862a8a-3a8c-46c3-910b-9b98bc85d83c}</SharePointProjectItemId>
     </None>
     <None Include="List\ImageLibrary\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{7188e5de-73e7-4c09-b7ac-a30e44d1ec20}</SharePointProjectItemId>
+      <SharePointProjectItemId>{03933130-de25-4119-95d5-527ce91668fc}</SharePointProjectItemId>
     </None>
     <None Include="List\ListNews\NewDataER\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5849d32d-fa42-4465-bb64-e1138dd2d54b}</SharePointProjectItemId>
@@ -145,6 +169,9 @@
     </None>
     <None Include="List\ListNews\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7a6f2da9-4feb-4711-86b5-8d5dae017091}</SharePointProjectItemId>
+    </None>
+    <None Include="List\ListNews\NewsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5599eb7a-dd5a-4b12-ba31-29e775496d78}</SharePointProjectItemId>
     </None>
     <None Include="List\SubscribeElementList\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{6826a27f-2350-4de3-81d7-313546195357}</SharePointProjectItemId>
@@ -164,27 +191,29 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
-    <None Include="Columns\NewsTitle\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{65a0d01e-a23d-47ca-90ac-7539aefeb4c8}</SharePointProjectItemId>
-    </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Columns\Category\Elements.xml">
+    <Content Include="Columns\CategoryLookup\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Columns\BandName\Elements.xml" />
+    <Content Include="Columns\CategoryName\Elements.xml" />
+    <Content Include="Columns\CommentBody\Elements.xml" />
     <Content Include="Columns\CompanyName\Elements.xml" />
     <Content Include="Columns\FinanceScope\Elements.xml" />
+    <Content Include="Columns\IsThumbnail\Elements.xml" />
     <Content Include="Columns\MusicGenre\Elements.xml" />
-    <Content Include="Columns\NewsID\Elements.xml" />
+    <Content Include="Columns\NewsLookup\Elements.xml" />
     <Content Include="Columns\Readed\Elements.xml" />
     <Content Include="Columns\ScienceBranch\Elements.xml" />
     <Content Include="Columns\ScienceType\Elements.xml" />
     <Content Include="Columns\SubscribeDate\Elements.xml" />
-    <Content Include="ContentType\Comment\Elements.xml" />
+    <Content Include="ContentType\Category\Elements.xml" />
+    <Content Include="ContentType\CommentCT\Elements.xml" />
     <Content Include="ContentType\FinanceNews\Elements.xml" />
     <Content Include="ContentType\MusicNews\Elements.xml" />
     <Content Include="ContentType\NewsBase\Elements.xml" />
+    <Content Include="ContentType\NewsImage\Elements.xml" />
     <Content Include="ContentType\ScienceNews\Elements.xml" />
     <Content Include="ContentType\SubscribeElement\Elements.xml" />
     <Content Include="ContentType\Subscriber\Elements.xml" />
@@ -198,12 +227,16 @@
       <DependentUpon>NewsFeedDataObjects.feature</DependentUpon>
     </Content>
     <Content Include="Columns\NewsBody\Elements.xml" />
-    <Content Include="Columns\NewsTitle\Elements.xml" />
+    <Content Include="List\Categories\CategoriesInstance\Elements.xml" />
     <Content Include="List\Categories\Elements.xml" />
     <Content Include="List\Categories\Schema.xml" />
+    <Content Include="List\Comments\CommentsInstance\Elements.xml" />
+    <Content Include="List\Comments\Elements.xml" />
+    <Content Include="List\Comments\Schema.xml" />
     <Content Include="List\ImageLibrary\EditDlg.htm" />
     <Content Include="List\ImageLibrary\Elements.xml" />
     <Content Include="List\ImageLibrary\FileDlg.htm" />
+    <Content Include="List\ImageLibrary\ImageLibraryInstance\Elements.xml" />
     <Content Include="List\ImageLibrary\Repair.aspx" />
     <Content Include="List\ImageLibrary\Schema.xml" />
     <Content Include="List\ImageLibrary\Upload.aspx" />
@@ -212,6 +245,7 @@
     <Content Include="List\ListNews\NewDataER\Elements.xml" />
     <Content Include="List\ListNews\NewDataWorkItemER\Elements.xml" />
     <Content Include="List\ListNews\Schema.xml" />
+    <Content Include="List\ListNews\NewsInstance\Elements.xml" />
     <Content Include="List\SubscribeElementList\Elements.xml" />
     <Content Include="List\SubscribeElementList\Schema.xml" />
     <Content Include="List\SubscribeElementList\SubscribeElementListInstance\Elements.xml" />

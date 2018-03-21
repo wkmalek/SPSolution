@@ -64,6 +64,14 @@
       <DependentUpon>NewsFeedWebPart.feature</DependentUpon>
     </Compile>
     <Compile Include="NewsFeedVer2\NewsFeedVer2.cs" />
+    <Compile Include="NewsTools\NewsTools.cs" />
+    <Compile Include="NewsTools\NewsToolsUserControl.ascx.cs">
+      <DependentUpon>NewsToolsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsTools\NewsToolsUserControl.ascx.designer.cs">
+      <DependentUpon>NewsToolsUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +88,10 @@
     </None>
     <None Include="NewsFeedVer2\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{6a7b0fc3-b17b-402a-a87d-e7d267c360c3}</SharePointProjectItemId>
+    </None>
+    <None Include="NewsTools\NewsTools.webpart" />
+    <None Include="NewsTools\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f1a5f9ea-1bb0-4419-9a2e-04e768adc24b}</SharePointProjectItemId>
     </None>
     <None Include="Package\Package.package">
       <PackageId>{56b7e96c-9549-4189-927e-8f87aad958b3}</PackageId>
@@ -126,6 +138,8 @@
     <Content Include="Layouts\WebParts\NewsFeed\images\_video.jpg" />
     <Content Include="Layouts\WebParts\NewsFeed\style.css" />
     <Content Include="NewsFeedVer2\Elements.xml" />
+    <Content Include="NewsTools\Elements.xml" />
+    <Content Include="NewsTools\NewsToolsUserControl.ascx" />
     <Content Include="PublishingResources\CQWPCustomItemStyle.xsl">
       <SubType>Designer</SubType>
     </Content>
