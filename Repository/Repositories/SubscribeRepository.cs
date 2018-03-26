@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Models;
 using Microsoft.SharePoint;
+using Models.Category;
 
 namespace Repository.Repositories
 {
@@ -18,6 +19,11 @@ namespace Repository.Repositories
                 query.Query = "<Where><Eq><FieldRef Name=\"User\" /><Value Type=\"Integer\">" + UserID + "</Value></Eq></Where>";
             SPListItemCollection subscriberModel = list.GetItems(query);
             return mapper.Translate(subscriberModel);
+        }
+
+        public List<SubscriberModel> GetSubscriberByCategoryID(List<CategoryModel> list)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="CssSandboxedWebParts">
+    <File Path="CssSandboxedWebParts\Sample.txt" Url="CssSandboxedWebParts/Sample.txt" />
+    <File Path="CssSandboxedWebParts\NewestNews.css" Url="CssSandboxedWebParts/NewestNews.css" />
+  </Module>
+</Elements>

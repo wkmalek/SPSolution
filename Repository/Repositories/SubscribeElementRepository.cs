@@ -16,5 +16,13 @@ namespace Repository.Repositories
             SPListItemCollection subscriberElements = list.GetItems(query);
             return mapper.Translate(subscriberElements);
         }
+
+        public List<SubscribeElementModel> GetAllElementsByUserID(string userID)
+        {
+            SPQuery query = new SPQuery();
+            query.Query = "<Where><Eq><FieldRef Name=\"Author\" /><Value Type=\"User\">"+userID+"</Value></Eq></Where>";
+            SPListItemCollection subscriberElements = list.GetItems(query);
+            return mapper.Translate(subscriberElements);
+        }
     }
 }

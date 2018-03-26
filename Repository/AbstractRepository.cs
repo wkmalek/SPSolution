@@ -47,5 +47,13 @@ namespace Repository
             newItem.Update();
         }
 
+        public void AddElements(List<T> model)
+        {
+            foreach(T item in model)
+            {
+                AddElement(item);
+            }
+        }
+
     }
 }

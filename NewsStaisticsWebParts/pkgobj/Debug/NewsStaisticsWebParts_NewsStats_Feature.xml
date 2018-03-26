@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="NewsStaisticsWebParts NewsStats" Id="b6cd25d6-e233-4ad6-8e19-1413aea29c51" Scope="Site">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="b6cd25d6-e233-4ad6-8e19-1413aea29c51" Scope="Site" Title="NewsStaisticsWebParts NewsStats">
   <ElementManifests>
     <ElementManifest Location="NewsStats\Elements.xml" />
     <ElementFile Location="NewsStats\NewsStats.webpart" />
+    <ElementManifest Location="NewestNewsStats\Elements.xml" />
+    <ElementFile Location="NewestNewsStats\NewestNewsStats.webpart" />
+    <ElementManifest Location="CssSandboxedWebParts\Elements.xml" />
+    <ElementFile Location="CssSandboxedWebParts\Sample.txt" />
+    <ElementFile Location="CssSandboxedWebParts\NewestNews.css" />
   </ElementManifests>
 </Feature>

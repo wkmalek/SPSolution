@@ -35,7 +35,7 @@ namespace Repository.MappingObj
                 _DateModified = CheckDateValue(item["_DCDateModified"]),
                 Editor = CheckStringValue(item["Editor"]),
                 UserID = CheckStringValue(item["UserID"]),
-                NewsID = CheckStringValue(item["NewsID"]),
+                NewsID = (int)(item["NewsID"]),
                 Readed = (bool)item["Readed"],
             };
         }

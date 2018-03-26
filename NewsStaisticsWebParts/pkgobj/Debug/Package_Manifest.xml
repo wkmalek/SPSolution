@@ -5,6 +5,7 @@
       <SafeControls>
         <SafeControl Assembly="NewsStaisticsWebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=76113819e8097dfc" Namespace="NewsStaisticsWebParts.NewestNews" TypeName="*" />
         <SafeControl Assembly="NewsStaisticsWebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=76113819e8097dfc" Namespace="NewsStaisticsWebParts.NewsStats" TypeName="*" />
+        <SafeControl Assembly="NewsStaisticsWebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=76113819e8097dfc" Namespace="NewsStaisticsWebParts.NewestNewsStats" TypeName="*" />
       </SafeControls>
     </Assembly>
   </Assemblies>

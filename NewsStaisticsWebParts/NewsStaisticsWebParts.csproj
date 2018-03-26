@@ -51,11 +51,24 @@
     <Reference Include="Microsoft.SharePoint" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NewestNewsStats\INewestNewsView.cs" />
+    <Compile Include="NewestNewsStats\NewestNewsStats.ascx.cs">
+      <DependentUpon>NewestNewsStats.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="NewestNewsStats\NewestNewsStats.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewestNewsStats.ascx</DependentUpon>
+    </Compile>
     <Compile Include="NewestNews\NewestNews.cs" />
     <Compile Include="NewsStats\NewsStats.cs" />
+    <Compile Include="Presenter\NewestNewsPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="CssSandboxedWebParts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2c16cc3f-beef-458e-aa55-bb32b7241502}</SharePointProjectItemId>
+    </None>
     <None Include="Features\Feature1\Feature1.feature">
       <FeatureId>{2ef6b187-0fdd-44e2-8b0c-69848529319b}</FeatureId>
     </None>
@@ -69,6 +82,10 @@
       <FeatureId>{f05b409a-a24f-47b4-8000-309d5a2306df}</FeatureId>
     </None>
     <None Include="key.snk" />
+    <None Include="NewestNewsStats\NewestNewsStats.webpart" />
+    <None Include="NewestNewsStats\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5a56b3a8-64ed-4b08-8109-9c20cba25377}</SharePointProjectItemId>
+    </None>
     <None Include="NewestNewsStyle\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{94cb0417-f083-42a9-af96-6b1696636eca}</SharePointProjectItemId>
     </None>
@@ -88,6 +105,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CssSandboxedWebParts\Elements.xml" />
+    <Content Include="CssSandboxedWebParts\NewestNews.css" />
+    <Content Include="CssSandboxedWebParts\Sample.txt" />
     <Content Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
     </Content>
@@ -100,11 +120,26 @@
     <Content Include="Features\NewsestNews\NewsestNews.Template.xml">
       <DependentUpon>NewsestNews.feature</DependentUpon>
     </Content>
+    <Content Include="NewestNewsStats\Elements.xml" />
+    <Content Include="NewestNewsStats\NewestNewsStats.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>NewestNewsStats.ascx.g.cs</LastGenOutput>
+    </Content>
     <Content Include="NewestNewsStyle\Elements.xml" />
     <Content Include="NewestNewsStyle\images.jpg" />
     <Content Include="NewestNewsStyle\Style.css" />
     <Content Include="NewestNews\Elements.xml" />
     <Content Include="NewsStats\Elements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{5A0F1589-05F1-431E-B72B-541CD80CE100}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharedLib\SharedLib.csproj">
+      <Project>{968ED443-6CCC-4537-BF04-1511FBFCFE59}</Project>
+      <Name>SharedLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -8,7 +8,7 @@ namespace Models
     public class SubscribeElementModel:BaseModel
     {
         public string UserID { get; set; }
-        public string NewsID { get; set; }
+        public int NewsID { get; set; }
         public bool Readed { get; set; }
     }
 }

@@ -22,7 +22,7 @@ namespace NewsStaisticsWebParts.NewestNews
 
         protected override void Render(HtmlTextWriter writer)
         {
-            SPListItem item = GetNewestListItem(SPContext.Current.Web.Url, "ListNews", "_DCDateCreated");
+            SPListItem item = GetNewestListItem(SPContext.Current.Web.Url, "NewsList", "Created");
             
             string imageUrl = SPContext.Current.Web.Url + "/NewestNewsStyle/images.jpg";
             //string newsLink = SPContext.Current.Web.Url+(item.Url.Split('_')[0]);
@@ -31,7 +31,7 @@ namespace NewsStaisticsWebParts.NewestNews
 
             string listUrl = item.Url.Substring(0,lastSlash);
             string newsLink = listUrl+"News.aspx"+"?ID="+itemID;
-            string Title = (string)item["NewsTitle"];
+            string Title = (string)item["Title"];
             string Descritpion = (string)item["NewsBody"];
             
             writer.AddAttribute(HtmlTextWriterAttribute.Class, "background");

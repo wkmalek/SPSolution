@@ -8,7 +8,7 @@ namespace Models
     public class SingleSubElement
     {
         public string UserID { get; set; }
-        public string NewsID { get; set; }
+        public int NewsID { get; set; }
         public bool Readed { get; set; }
 
         public SingleSubElement(SubscribeElementModel model)

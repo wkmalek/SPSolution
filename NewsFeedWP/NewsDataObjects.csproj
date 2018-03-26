@@ -285,7 +285,12 @@
     <Content Include="SubscribeButton\Elements.xml" />
     <Content Include="SubscribeButton\SubscribeButtonUserControl.ascx" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{5A0F1589-05F1-431E-B72B-541CD80CE100}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

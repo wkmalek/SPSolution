@@ -5,6 +5,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using Microsoft.SharePoint;
 using Microsoft.SharePoint.Administration;
+using Models;
 
 namespace SubscriptionJob
 {
@@ -44,54 +45,30 @@ namespace SubscriptionJob
         protected override bool ProcessWorkItem(SPContentDatabase contentDb, SPWorkItemCollection workItems,
             SPWorkItem workItem, SPJobState jobState)
         {
-            if(workItem == null) throw new ArgumentException("workItem is null");
-            try
+            SubscribersModel model = new SubscribersModel();
+            bool output = false;
+            if (workItem == null) throw new ArgumentException("workItem is null");
+            using (SPSite site = new SPSite(workItem.SiteId))
             {
-                using (SPSite site = new SPSite(workItem.SiteId))
+                using (SPWeb web = site.OpenWeb(workItem.WebId))
                 {
-                    using (SPWeb web = site.OpenWeb(workItem.WebId))
+                    try
                     {
-                        try
-                        {
-                            //TODO CODE HERE
-                            SPList list = web.Lists[workItem.ParentId];
-                            SPListItem listItem = list.GetItemByUniqueId(workItem.ItemGuid);
 
-                            SPList subList = web.Lists["SubscriberList"];
-                            SPList elements = web.Lists["SubscribeElementList"];
-                            //TODO Rewrite to caml
-                            for (int i = 0; i < subList.ItemCount; i++)
-                            {
-                                SPListItem item = subList.Items[i];
-                                if (workItem.UserId == (int)item["User"])
-                                {
-                                    SPListItem newSubItem = elements.Items.Add();
-                                    newSubItem["User"] = workItem.UserId;
-                                    newSubItem["NewsID"] = listItem["ID"];
-                                    newSubItem["Readed"] = false;
-                                    newSubItem.Update();
-                                }
-                            }
+                        output = model.CheckSubscriptions(workItem, workItems);
 
-                        }
-                        catch (Exception e)
-                        {
-                            throw e;
-                        }
-                        finally
-                        {
-                            workItems.SubCollection(site, web, 0, (uint)workItems.Count).DeleteWorkItem(workItem.Id);
-                        }
                     }
-
+                    catch (Exception e)
+                    {
+                        throw e;
+                    }
+                    finally
+                    {
+                        workItems.SubCollection(site, web, 0, (uint)workItems.Count).DeleteWorkItem(workItem.Id);
+                    }
                 }
             }
-            catch (Exception e)
-            {
-                throw e;
-            }
-
-            return true;
+            return output; 
         }
     }
 }

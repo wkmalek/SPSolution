@@ -27,3 +27,10 @@ C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsFeed
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsFeedWP\bin\Debug\Microsoft.SharePoint.Security.xml
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsFeedWP\obj\Debug\NewsFeedWP.dll
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsFeedWP\obj\Debug\NewsFeedWP.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsFeedWP\bin\Debug\Models.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsFeedWP\bin\Debug\PocoModels.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsFeedWP\bin\Debug\Repository.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsFeedWP\bin\Debug\Models.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsFeedWP\bin\Debug\PocoModels.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsFeedWP\bin\Debug\Repository.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsFeedWP\obj\Debug\NewsDataObjects.csprojResolveAssemblyReference.cache
