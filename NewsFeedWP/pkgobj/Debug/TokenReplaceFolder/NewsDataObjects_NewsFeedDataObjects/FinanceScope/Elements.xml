@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <Field Type="Choice" DisplayName="Finance scope" ID="{FEB2AF96-90FB-4260-87F4-C28C5B12852B}" Format="Dropdown" BaseType="Text" Description="" Name="FinanceScope" Group="Custom Site Columns" Version="2" StaticName="Finance_x0020_scope" SourceID="{fc17eb91-f99c-4364-8263-51e23299b8dc}" Overwrite="TRUE">
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{652b260f-6cfc-4e73-a923-1b0ee74f979a}"
+       Name="FinanceScope"
+       DisplayName="Finance Scope"
+       Type="Choice"
+       Format="Dropdown"
+       BaseType="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
     <Default>Micro business</Default>
     <CHOICES>
       <CHOICE>Micro business</CHOICE>
@@ -10,5 +18,4 @@
       <CHOICE>Macro economy</CHOICE>
     </CHOICES>
   </Field>
-
 </Elements>

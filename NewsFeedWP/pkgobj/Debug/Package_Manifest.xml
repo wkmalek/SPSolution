@@ -3,13 +3,14 @@
   <Assemblies>
     <Assembly Location="NewsFeedWP.dll" DeploymentTarget="GlobalAssemblyCache">
       <SafeControls>
-        <SafeControl Assembly="NewsFeedWP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=10ad000354663770" Namespace="NewsFeedWP.List.ListNews" TypeName="*" />
+        <SafeControl Assembly="NewsFeedWP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=10ad000354663770" Namespace="NewsFeedWP.List.NewsList" TypeName="*" />
       </SafeControls>
     </Assembly>
   </Assemblies>
   <FeatureManifests>
-    <FeatureManifest Location="NewsDataObjects_NewsListER\Feature.xml" />
-    <FeatureManifest Location="NewsDataObjects_NewListWorkItemER\Feature.xml" />
     <FeatureManifest Location="NewsDataObjects_NewsFeedDataObjects\Feature.xml" />
+    <FeatureManifest Location="NewsDataObjects_Feature1\Feature.xml" />
+    <FeatureManifest Location="NewsDataObjects_Feature2\Feature.xml" />
+    <FeatureManifest Location="NewsDataObjects_Feature3\Feature.xml" />
   </FeatureManifests>
 </Solution>

@@ -9,6 +9,6 @@ namespace NewsView.Presenter
 {
     public interface ICommentsView : IMyView
     {
-        CommentsNewsViewModel comments {get;set;}
+        CommentsNewsViewModel comments {set;}
     }
 }

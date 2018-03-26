@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PocoModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,17 +14,20 @@ namespace Models.Comments
         public DateTime? DateModified { get; set; }
         public string PostUrl { get; set; }
         public string CommentBody { get; set; }
+        public UserModel Author { get; set; }
+        
 
-
-        public CommentNewsModel(CommentsModel model)
+        public CommentNewsModel(CommentsModel model, UserModel user)
         {
             //Title
+            Title = model.Title;
+            Author = user;
             PostID = model.NewsLookup;
             DateCreated = model._DCDateCreated;
             DateModified = model._DateModified;
-            //PostUrl = 
             CommentBody = model.CommentBody;
-
         }
+
+       
     }
 }

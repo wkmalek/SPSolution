@@ -10,6 +10,7 @@ namespace Models.Images
         public List<ImageNewsViewModel> Images { get; private set; }
         public ImagesNewsViewModel(List<SingleImageNewsModel> images)
         {
+            Images = new List<ImageNewsViewModel>();
            foreach (SingleImageNewsModel item in images)
             {
                 Images.Add(new ImageNewsViewModel(item));

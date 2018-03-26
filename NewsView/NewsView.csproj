@@ -59,6 +59,8 @@
     <Compile Include="AddNewCommentWebPart\AddNewCommentWebPartUserControl.ascx.designer.cs">
       <DependentUpon>AddNewCommentWebPartUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddNewCommentWebPart\INewCommentView.cs" />
+    <Compile Include="ImageGalleryWebPart\IImageView.cs" />
     <Compile Include="ImageGalleryWebPart\ImageGalleryWebPart.cs" />
     <Compile Include="ImageGalleryWebPart\ImageGalleryWebPartUserControl.ascx.cs">
       <DependentUpon>ImageGalleryWebPartUserControl.ascx</DependentUpon>
@@ -86,6 +88,8 @@
     </Compile>
     <Compile Include="NewsCommentsWebPart\ICommentsView.cs" />
     <Compile Include="Presenter\CommentsViewPresenter.cs" />
+    <Compile Include="Presenter\ImageViewPresenter.cs" />
+    <Compile Include="Presenter\NewCommentPresenter.cs" />
     <Compile Include="Presenter\NewsViewPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <Field Type="Choice" DisplayName="Science type" ID="{3C700C0F-87A3-47E1-BA8D-E2979059F77E}" Format="Dropdown" BaseType="Text" Description="" Name="ScienceType" Group="Custom Columns" Version="2" StaticName="Science_x0020_type" SourceID="{fc17eb91-f99c-4364-8263-51e23299b8dc}" Overwrite="TRUE">
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{bc01c3d9-3f9e-4de6-a41e-5b652f7378df}"
+       Name="ScienceType"
+       DisplayName="Science Type"
+       Type="Choice"
+       Required="FALSE"
+       Format="Dropdown" 
+       BaseType="Text"
+       Group="Custom Site Columns">
     <Default>Research</Default>
     <CHOICES>
       <CHOICE>Research</CHOICE>

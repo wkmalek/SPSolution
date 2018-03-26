@@ -9,5 +9,6 @@ namespace Models.Comments
     { 
         public string CommentBody { get; set; }
         public int NewsLookup { get; set; }
+        public string Title { get; set; }
     }
 }

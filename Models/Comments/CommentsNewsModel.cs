@@ -18,10 +18,23 @@ namespace Models.Comments
 
             foreach(CommentsModel item in comments)
             {
-                commentsModelList.Add(new CommentNewsModel(item));
+                commentsModelList.Add(new CommentNewsModel(item, repo.userHelper.GetUserByID(item.Author.Split(';').First())));
             }
 
             return new CommentsNewsViewModel(commentsModelList);
+        }
+
+        public void AddComment(NewComment comment)
+        {
+            CommentsModel model = new CommentsModel()
+            {
+                CommentBody = comment.Body,
+                Title = comment.Title,
+                NewsLookup = int.Parse(comment.LookupID),
+                //_DCDateCreated = DateTime.Now,
+            };
+            repo.AddElement(model);
+
         }
     }
 }

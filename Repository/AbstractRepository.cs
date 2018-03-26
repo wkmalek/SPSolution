@@ -1,5 +1,6 @@
 ﻿using Microsoft.SharePoint;
 using Repository.MappingObj;
+using Repository.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +12,13 @@ namespace Repository
     {
         internal ContextHelper context;
         protected  SPList list;
+        public UserHelper userHelper;
         protected  MapperFactory<T> mapperFactory = new MapperFactory<T>();
         protected IMapper<T> mapper;
         public AbstractRepository()
         {
-            mapper = mapperFactory.GetMapper();
+            mapper = mapperFactory.GetMapper(SPContext.Current.Web.Url);
+            userHelper = new UserHelper(SPContext.Current.Web.Url);
             Connect(SPContext.Current.Web.Url, mapper.ListName);
         }
 
@@ -36,6 +39,13 @@ namespace Repository
             throw new NotImplementedException();
         }
 
+        public void AddElement(T model)
+        {
+            
+            SPListItem newItem = list.Items.Add();
+            mapper.Translate(model, newItem);
+            newItem.Update();
+        }
 
     }
 }

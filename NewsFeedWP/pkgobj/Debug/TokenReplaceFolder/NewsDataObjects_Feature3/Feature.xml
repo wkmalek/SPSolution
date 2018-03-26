@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="NewsDataObjects Feature3" Id="33443aff-cce8-41e0-a449-d9e044bfe195" Scope="Web">
+  <ElementManifests>
+    <ElementManifest Location="SubscribeElementList\Elements.xml" />
+    <ElementFile Location="SubscribeElementList\Schema.xml" />
+    <ElementManifest Location="SubscribeElementListInstance\Elements.xml" />
+  </ElementManifests>
+</Feature>

@@ -71,6 +71,7 @@
     <Compile Include="Repositories\NewsRepository.cs" />
     <Compile Include="Repositories\SubscribeElementRepository.cs" />
     <Compile Include="Repositories\SubscribeRepository.cs" />
+    <Compile Include="Repositories\UserHelper.cs" />
     <Compile Include="RepositoryFactory.cs" />
   </ItemGroup>
   <ItemGroup>

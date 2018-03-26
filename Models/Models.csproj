@@ -54,6 +54,7 @@
     <Compile Include="Comments\CommentsNewsModel.cs" />
     <Compile Include="Comments\CommentsNewsViewModel.cs" />
     <Compile Include="Comments\ICommentsNewsModel.cs" />
+    <Compile Include="Comments\NewComment.cs" />
     <Compile Include="Images\IImagesNewsModel.cs" />
     <Compile Include="Images\ImagesNewsModel.cs" />
     <Compile Include="Images\ImagesNewsViewModel.cs" />

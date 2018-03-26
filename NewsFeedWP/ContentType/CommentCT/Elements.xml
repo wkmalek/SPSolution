@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <!-- Parent ContentType: Item (0x01) -->
-  <ContentType ID="0x01009441BD92C96040FAA5DDCA4F5B889BA1" Name="CommentCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
-    <FieldRefs>
-      <FieldRef ID="{8db8333e-52d8-4c66-bdd7-b7f291d55c50}" DisplayName="Comment Body" Required="TRUE" Name="CommentBody" />
-    </FieldRefs>
-  </ContentType>
-</Elements>

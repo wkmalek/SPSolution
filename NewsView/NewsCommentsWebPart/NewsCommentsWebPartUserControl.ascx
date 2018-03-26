@@ -28,7 +28,7 @@
             <tbody id="ATBODY_12">
             <tr id="ATR_13">
                 <td id="ATD_14">
-                    <asp:Label runat="server" ID="CommentTitle" Text='<%# DataBinder.Eval(Container.DataItem, "[\"Title\"]") %>'/>
+                    <asp:Label runat="server" ID="CommentTitle" Text='<%# Eval("Title") %>'/>
                 </td>
                 <td id="ATD_16">
                     <a href="javascript:" id="AA_17">Edit</a>
@@ -39,14 +39,14 @@
         <div id="ADIV_18">
             <div id="ADIV_19">
                 <div id="ADIV_20">
-                    <asp:Label runat="server" ID="CommentBody" Text='<%# DataBinder.Eval(Container.DataItem, "[\"Body\"]") %>'/>
+                    <asp:Label runat="server" ID="CommentBody" Text='<%# Eval("PostBody") %>'/>
                 </div>
             </div>
         </div>
         <div id="ADIV_21">
             <nobr id="ANOBR_22">
-                <span id="ASPAN_23"><a href="/blog/_layouts/userdisp.aspx?ID=1073741823" id="AA_24"><asp:Label ID="UserName" /></a><img height="1" width="3" src="/_layouts/images/blank.gif" id="AIMG_25" alt='' /><img height="12" width="12" src="/_layouts/images/blank.gif" alt="" id="AIMG_26" /></span>
-            </nobr> on <span id="ASPAN_27"><asp:Label runat="server" ID="DateCreated" /></span>
+                <span id="ASPAN_23"><asp:HyperLink runat="server" CssClass="AA_24" NavigateUrl='<%# Eval("UserUrl") %>'> <asp:Label ID="UserName" runat="server" Text='<%# Eval("UserName") %>'/></asp:HyperLink><img height="1" width="3" src="/_layouts/images/blank.gif" id="AIMG_25" alt='' /><img height="12" width="12" src="/_layouts/images/blank.gif" alt="" id="AIMG_26" /></span>
+            </nobr> on <span id="ASPAN_27"><asp:Label runat="server" ID="DateCreated" Text='<%# Eval("DateCreated") %>'/></span>
         </div>
 
     </ItemTemplate>

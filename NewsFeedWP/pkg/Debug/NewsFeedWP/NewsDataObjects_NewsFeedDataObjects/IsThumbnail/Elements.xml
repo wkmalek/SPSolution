@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
   <Field
-       ID="{ae54808c-e2eb-4c8e-bdd6-13f8b662acbf}"
+       ID="{31914a15-453c-4478-b6cc-1378fba6a9af}"
        Name="IsThumbnail"
        DisplayName="Is Thumbnail"
        Type="Boolean"

@@ -27,20 +27,24 @@ namespace Repository.MappingObj
                 ID = item.ID,
                 ContentType = item.ContentType.Name,
                 Author = CheckStringValue(item["Author"]),
-                _DCDateCreated = CheckDateValue(item["_DCDateCreated"]),
-                _DateModified = CheckDateValue(item["_DCDateModified"]),
+                _DCDateCreated = CheckDateValue(item["Created"]),
+                _DateModified = CheckDateValue(item["Modified"]),
                 Editor = CheckStringValue(item["Editor"]),
-                NewsTitle = CheckStringValue(item["NewsTitle"]),
+                NewsTitle = CheckStringValue(item["Title"]),
                 NewsBody = CheckStringValue(item["NewsBody"]),
-                Category = CheckStringValue(item["Category"]),
+                Category = CheckStringValue(item["CategoryLookup"]),
                 FinanceScope = CheckStringValue(item["FinanceScope"]),
                 CompanyName = CheckStringValue(item["CompanyName"]),
                 BandName = CheckStringValue(item["BandName"]),
                 MusicGenre = CheckStringValue(item["MusicGenre"]),
                 ScienceType = CheckStringValue(item["ScienceType"]),
-                ScienceBranch = CheckStringValue(item["ScienceBranch"]),
+                ScienceBranch = CheckStringValue(item["ScienceBrach"]),
             };
         }
-        
+
+        public void Translate(NewsModel model, SPListItem item)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

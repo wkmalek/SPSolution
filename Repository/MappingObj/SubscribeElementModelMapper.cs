@@ -38,6 +38,11 @@ namespace Repository.MappingObj
                 NewsID = CheckStringValue(item["NewsID"]),
                 Readed = (bool)item["Readed"],
             };
-        }     
+        }
+
+        public void Translate(SubscribeElementModel model, SPListItem item)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

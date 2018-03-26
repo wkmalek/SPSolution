@@ -15,20 +15,21 @@ namespace NewsView.NewsCommentsWebPart.cs
         //
         public CommentsNewsViewModel comments
         {
-            get { return comments; }
             set
             {
-                comments = value;
-                Repeater.DataSource = comments;
+                List<CommentNewsViewModel> list = value.Comments;
+                Repeater.DataSource = list;
                 Repeater.DataBind();
             }
         }
 
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
             CommentsViewPresenter _presenter = new CommentsViewPresenter();
-            //_presenter._pView = this;
-            //_presenter.LoadComments();
+            _presenter._pView = this;
+            _presenter.LoadComments();
         }
     }
 }

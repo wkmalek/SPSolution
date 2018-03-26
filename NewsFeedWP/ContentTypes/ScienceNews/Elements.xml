@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: NewsBase (NewsDataObjects\NewsBase) (0x0100C6414F7AC5D84BB1BBAD3A8A0F555A2F) -->
+  <ContentType ID="0x0100C6414F7AC5D84BB1BBAD3A8A0F555A2F007ED25794A06C4DF8ABA968BFD3E1DCB2" Name="ScienceNews" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{231ffecb-6b38-4ffd-b191-eaf9f8c36f35}" DisplayName="Science Brach" Required="FALSE" Name="ScienceBrach" />
+      <FieldRef ID="{bc01c3d9-3f9e-4de6-a41e-5b652f7378df}" DisplayName="Science Type" Required="FALSE" Name="ScienceType" Format="Dropdown" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

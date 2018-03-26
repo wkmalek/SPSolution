@@ -4,4 +4,7 @@
     <ProjectItemFile Source="Elements.xml" Target="Comments\" Type="ElementManifest" />
     <ProjectItemFile Source="Schema.xml" Target="Comments\" Type="ElementFile" />
   </Files>
+  <ExtensionData>
+    <ExtensionDataItem Key="Microsoft.VisualStudio.SharePoint.ListSettings.ListFieldsContentTypeID" Value="0x010077326001e79a46ffad042af8d78e1ca3" />
+  </ExtensionData>
 </ProjectItem>

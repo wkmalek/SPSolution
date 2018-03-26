@@ -37,5 +37,10 @@ namespace Repository.MappingObj
                 CategoryName = CheckStringValue(item["CategoryName"]),
             };
         }
+
+        public void Translate(CategoryModel model, SPListItem item)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

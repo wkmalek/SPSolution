@@ -4,12 +4,12 @@
     <ContentTypes>
       
       
-    <ContentType ID="0x01009441BD92C96040FAA5DDCA4F5B889BA1" Name="CommentCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{9af24c40-3f26-47f5-bd52-841017fbf1a9}" DisplayName="News Lookup" Required="TRUE" Name="NewsLookup" /><FieldRef ID="{8db8333e-52d8-4c66-bdd7-b7f291d55c50}" DisplayName="Comment Body" Required="TRUE" Name="CommentBody" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+    <ContentType ID="0x0100BD1C832E1DE842ECA26CFD9EADEF4B2C" Name="CommentCT" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{296f5ded-e700-48cf-b0f0-7e2b81163db1}" DisplayName="Comment Body" Required="FALSE" Name="CommentBody" /><FieldRef ID="{8737de0e-2192-4204-bf43-333f41233fba}" DisplayName="News Lookup" Required="FALSE" Name="NewsLookup" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
         <Folder TargetName="Item" />
       </ContentTypeRef></ContentTypes>
     <Fields>
        
-    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{9af24c40-3f26-47f5-bd52-841017fbf1a9}" Name="NewsLookup" DisplayName="News Lookup" List="List/ListNews" ShowField="ID" Type="Lookup" Required="FALSE" Group="Custom Site Columns"></Field><Field ID="{8db8333e-52d8-4c66-bdd7-b7f291d55c50}" Name="CommentBody" DisplayName="Comment Body" Type="Note" Required="TRUE" Group="Custom Site Columns"></Field></Fields>
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{296f5ded-e700-48cf-b0f0-7e2b81163db1}" Name="CommentBody" DisplayName="Comment Body" Type="Note" Required="FALSE" Group="Custom Site Columns"></Field><Field ID="{8737de0e-2192-4204-bf43-333f41233fba}" Name="NewsLookup" DisplayName="News Lookup" List="Lists/NewsList" Type="Lookup" Required="FALSE" ShowField="ID" Group="Custom Site Columns"></Field></Fields>
     <Views>
       
       
@@ -37,7 +37,7 @@
         <ViewFields>
           
           
-        <FieldRef Name="Attachments"></FieldRef><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="NewsLookup" /><FieldRef Name="CommentBody" /></ViewFields>
+        <FieldRef Name="Attachments"></FieldRef><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="CommentBody" /><FieldRef Name="NewsLookup" /></ViewFields>
         <Query>
           <OrderBy>
             

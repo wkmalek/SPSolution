@@ -8,5 +8,6 @@ namespace Models.Comments
     public interface ICommentsNewsModel:IModel
     {
         CommentsNewsViewModel GetModel(string ID);
+        void AddComment(NewComment comment);
     }
 }

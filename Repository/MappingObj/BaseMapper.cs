@@ -8,6 +8,7 @@ namespace Repository.MappingObj
     public abstract class BaseMapper
     {
         public string ListName { get; set; }
+        
         protected virtual string CheckStringValue(object obj)
         {
             if (obj != null)

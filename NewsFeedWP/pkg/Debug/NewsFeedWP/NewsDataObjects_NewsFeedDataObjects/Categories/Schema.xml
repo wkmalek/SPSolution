@@ -4,12 +4,12 @@
     <ContentTypes>
       
       
-    <ContentType ID="0x0100D8D146FA2D6F48A0AFE4E1AA8612191E" Name="Category" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{521bdec3-8c9b-4cfd-8fed-559b4a80c755}" DisplayName="Category Name" Required="TRUE" Name="CategoryName" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+    <ContentType ID="0x01001DE39DDBB0394E4A9E76265EBCC94A28" Name="Category" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{6f4db15f-3a40-4981-9213-a8866a4f4be0}" DisplayName="Category Name" Required="FALSE" Name="CategoryName" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
         <Folder TargetName="Item" />
       </ContentTypeRef></ContentTypes>
     <Fields>
        
-    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{521bdec3-8c9b-4cfd-8fed-559b4a80c755}" Name="CategoryName" DisplayName="Category Name" Type="Text" Required="TRUE" Group="Custom Site Columns"></Field></Fields>
+    <Field ID="{6f4db15f-3a40-4981-9213-a8866a4f4be0}" Name="CategoryName" DisplayName="Category Name" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field></Fields>
     <Views>
       
       

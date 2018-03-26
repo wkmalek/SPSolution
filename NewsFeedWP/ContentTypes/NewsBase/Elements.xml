@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100C6414F7AC5D84BB1BBAD3A8A0F555A2F" Name="NewsBase" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{6298e4ab-f05e-4794-b3bd-716543844d43}" DisplayName="Category Lookup" Required="TRUE" Name="CategoryLookup" />
+      <FieldRef ID="{8dd04645-2594-4b66-97ef-95c50f1ed5b0}" DisplayName="News Body" Required="FALSE" Name="NewsBody" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

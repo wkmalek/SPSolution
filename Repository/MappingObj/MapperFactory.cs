@@ -1,6 +1,7 @@
 ﻿using Microsoft.SharePoint;
 using Models;
 using Models.Category;
+using Models.Comments;
 using Models.Images;
 using Models.Post;
 using System;
@@ -14,24 +15,28 @@ namespace Repository.MappingObj
     {
         private readonly Dictionary<string, string> listMap = new Dictionary<string, string>
         {
-            {typeof(NewsModel).ToString(), "ListNews" },
-            {typeof(ImagesModel).ToString(), "ImageLibrary" },
+            {typeof(NewsModel).ToString(), "NewsList" },
+            {typeof(ImagesModel).ToString(), "NewsImages" },
             {typeof(CategoryModel).ToString(), "Categories" },
+            {typeof(CommentsModel).ToString(), "Comments" },
             {typeof(SubscribeElementModel).ToString(), "SubscribeElementList"},
             {typeof(SubscriberModel).ToString(), "SubscriberList" },
         };
 
         private IMapper<T> mapper { get; set; }
 
-        public  IMapper<T> GetMapper()
+        public  IMapper<T> GetMapper(string Url)
         {
             string t = typeof(T).ToString();
             if (t.Split('.').Last() == "NewsModel")
                 mapper = (IMapper<T>)(new NewsModelMapper(listMap[t]));
             if (t.Split('.').Last() == "Categories")
                 mapper = (IMapper<T>)(new CategoryModelMapper(listMap[t]));
-            if (t.Split('.').Last() == "Comments")
+            if (t.Split('.').Last() == "CommentsModel")
                 mapper = (IMapper<T>)(new CommentsModelMapper(listMap[t]));
+            if (t.Split('.').Last() == "ImagesModel")
+                mapper = (IMapper<T>)(new ImagesModelMapper(listMap[t], Url));
+
             return mapper;
         }
         

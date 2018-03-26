@@ -37,5 +37,10 @@ namespace Repository.MappingObj
                 AllCategories = (bool)item["AllCategories"],
             };
         }
+
+        public void Translate(SubscriberModel model, SPListItem item)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

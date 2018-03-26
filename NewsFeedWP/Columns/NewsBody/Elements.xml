@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
   <Field
-       ID="{14574ec2-1ca8-4b78-a620-ef1c13a98649}"
+       ID="{8dd04645-2594-4b66-97ef-95c50f1ed5b0}"
        Name="NewsBody"
-       DisplayName="News body"
+       DisplayName="News Body"
        Type="Note"
-       Required="TRUE"
-       Group="Custom Site Columns"
-    Overwrite="TRUE">
+       Required="FALSE"
+       Group="Custom Site Columns">
   </Field>
 </Elements>

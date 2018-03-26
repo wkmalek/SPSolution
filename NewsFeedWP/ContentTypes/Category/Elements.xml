@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01001DE39DDBB0394E4A9E76265EBCC94A28" Name="Category" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{6f4db15f-3a40-4981-9213-a8866a4f4be0}" DisplayName="Category Name" Required="FALSE" Name="CategoryName" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

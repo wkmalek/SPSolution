@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01007AA794F43E114EA7AE4B56590A02C520" Name="SubscribeElement" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{5928ff1f-daa1-406c-b4a9-190485a448cb}" DisplayName="$Resources:core,User_ID;" Required="TRUE" Name="User" Sealed="TRUE" />
+      <FieldRef ID="{8737de0e-2192-4204-bf43-333f41233fba}" DisplayName="News Lookup" Required="TRUE" Name="NewsLookup" />
+      <FieldRef ID="{d75bc072-4203-46e3-b6c5-2cec7373ffcf}" DisplayName="Reade" Required="TRUE" Name="Reade" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

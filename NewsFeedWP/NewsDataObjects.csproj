@@ -52,138 +52,154 @@
     <Reference Include="Microsoft.SharePoint" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="List\ListNews\News.aspx.cs">
+    <Compile Include="List\NewsList\News.aspx.cs">
       <DependentUpon>News.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="List\ListNews\News.aspx.designer.cs">
+    <Compile Include="List\NewsList\News.aspx.designer.cs">
       <DependentUpon>News.aspx.cs</DependentUpon>
     </Compile>
-    <Compile Include="List\ListNews\NewDataER\NewDataER.cs" />
-    <Compile Include="List\ListNews\NewDataWorkItemER\NewDataWorkItemER.cs" />
+    <Compile Include="List\NewsList\NewDataER\NewDataER.cs" />
+    <Compile Include="List\NewsList\NewDataWorkItemER\NewDataWorkItemER.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubscribeButton\SubscribeButton.cs" />
+    <Compile Include="SubscribeButton\SubscribeButtonUserControl.ascx.cs">
+      <DependentUpon>SubscribeButtonUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubscribeButton\SubscribeButtonUserControl.ascx.designer.cs">
+      <DependentUpon>SubscribeButtonUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimerJobs\SubJob.cs" />
+    <Compile Include="TimerJobs\SubWorkItemJob.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Columns\CategoryLookup\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{da6044c0-9222-4bdb-8d2b-c589f5cf8837}</SharePointProjectItemId>
-    </None>
     <None Include="Columns\BandName\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{216da9f7-9461-4603-ad94-ea18fc0d2b01}</SharePointProjectItemId>
+      <SharePointProjectItemId>{1ba5a1b7-df9a-476b-81f1-b09776f57e63}</SharePointProjectItemId>
+    </None>
+    <None Include="Columns\CategoryLookup\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{65d148e6-4423-48c1-913a-e1db85fee421}</SharePointProjectItemId>
     </None>
     <None Include="Columns\CategoryName\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{7f8ec8a0-8c5c-45eb-84ab-ceb10c203660}</SharePointProjectItemId>
+      <SharePointProjectItemId>{24fb5f13-c376-40d2-8b4f-8d3477699bea}</SharePointProjectItemId>
     </None>
     <None Include="Columns\CommentBody\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{84d4e298-4acd-4105-a377-be6c86193cd6}</SharePointProjectItemId>
+      <SharePointProjectItemId>{9f63324a-a540-4a18-9cfc-21ce91d4643e}</SharePointProjectItemId>
     </None>
     <None Include="Columns\CompanyName\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{48fe20bb-17f8-44d7-9862-0f550a071035}</SharePointProjectItemId>
+      <SharePointProjectItemId>{c4cea0af-32fa-4966-bab1-81c9026ee7c1}</SharePointProjectItemId>
     </None>
     <None Include="Columns\FinanceScope\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{fdcec969-d4ee-4421-8c57-60e23cbd9357}</SharePointProjectItemId>
+      <SharePointProjectItemId>{cfa68e37-9db9-43fb-b717-a5c3671654d0}</SharePointProjectItemId>
     </None>
     <None Include="Columns\IsThumbnail\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{22c16451-d5e7-414d-bb8e-2b7e2ef613d3}</SharePointProjectItemId>
+      <SharePointProjectItemId>{fb21edba-856c-4300-b876-3084b3139596}</SharePointProjectItemId>
     </None>
     <None Include="Columns\MusicGenre\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{bdef062f-a5ef-4852-87c3-eb03e454de44}</SharePointProjectItemId>
+      <SharePointProjectItemId>{549095e3-38c1-44ad-9544-a7d22c325445}</SharePointProjectItemId>
+    </None>
+    <None Include="Columns\NewsBody\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9e9fda4a-9239-4d10-8d8a-5056ba8ece3b}</SharePointProjectItemId>
     </None>
     <None Include="Columns\NewsLookup\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{55691839-daff-4379-b49e-0594c32d7518}</SharePointProjectItemId>
+      <SharePointProjectItemId>{47ac600e-ad21-457d-9def-ebdb0d289ab0}</SharePointProjectItemId>
     </None>
-    <None Include="Columns\Readed\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{d2ca73a3-97fd-4871-a54f-de8b7e7da166}</SharePointProjectItemId>
+    <None Include="Columns\Reade\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ab117dae-fc0f-4ef0-bed0-d30c2deeea58}</SharePointProjectItemId>
     </None>
-    <None Include="Columns\ScienceBranch\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{f2e55197-23c5-4a0f-b7e5-1f3430292c96}</SharePointProjectItemId>
+    <None Include="Columns\ScienceBrach\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{193df177-59ac-467f-bead-67e680ef8743}</SharePointProjectItemId>
     </None>
     <None Include="Columns\ScienceType\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{242cff51-04a5-4f11-b337-d4d5c1b72efd}</SharePointProjectItemId>
+      <SharePointProjectItemId>{88e1f815-ef9d-4247-aac0-1f3842d35afa}</SharePointProjectItemId>
     </None>
     <None Include="Columns\SubscribeDate\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{a75d0386-c870-4d39-be50-f4da0221b5f1}</SharePointProjectItemId>
+      <SharePointProjectItemId>{f4717660-c417-49c3-9ac0-cf2440244858}</SharePointProjectItemId>
     </None>
-    <None Include="ContentType\Category\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{42a353b3-be70-44b1-a189-a251803a7cf7}</SharePointProjectItemId>
+    <None Include="ContentTypes\Category\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f1a6c8a3-2f96-4704-b851-5ce37c00f049}</SharePointProjectItemId>
     </None>
-    <None Include="ContentType\CommentCT\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{6d258fbd-5c8a-45c2-bbbf-d7938c80126b}</SharePointProjectItemId>
+    <None Include="ContentTypes\CommentCT\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{197bd11c-1d10-4117-82d0-716f234a6d70}</SharePointProjectItemId>
     </None>
-    <None Include="ContentType\FinanceNews\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{919f3edc-4c83-42be-a9ce-7d2d8eb04c2d}</SharePointProjectItemId>
+    <None Include="ContentTypes\FinanceNews\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{787196d6-5d76-4e01-8a7b-5bba172d0094}</SharePointProjectItemId>
     </None>
-    <None Include="ContentType\MusicNews\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{b9438346-fdad-4911-8895-771eb9e9014f}</SharePointProjectItemId>
+    <None Include="ContentTypes\MusicNews\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{683a8d94-4491-4ecf-a43c-b9b880138fe2}</SharePointProjectItemId>
     </None>
-    <None Include="ContentType\NewsBase\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{5406a1d2-1754-438b-9278-c33dbd0752df}</SharePointProjectItemId>
+    <None Include="ContentTypes\NewsBase\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e42c5a6b-b391-4594-a12a-415d4be807ae}</SharePointProjectItemId>
     </None>
-    <None Include="ContentType\NewsImage\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{3c7d623f-ea18-4835-b319-d03a603d8f8b}</SharePointProjectItemId>
+    <None Include="ContentTypes\NewsImage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f71e6f78-9bc5-4b3f-94f0-7849ff1ae4fb}</SharePointProjectItemId>
     </None>
-    <None Include="ContentType\ScienceNews\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{f657ff9c-4755-43e0-9499-cb10800ec734}</SharePointProjectItemId>
+    <None Include="ContentTypes\ScienceNews\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6f32b410-cf81-4062-859a-0fbd98998281}</SharePointProjectItemId>
     </None>
-    <None Include="ContentType\SubscribeElement\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{5bc9ffb4-4de1-40ca-85fc-e6c9784ba3cf}</SharePointProjectItemId>
+    <None Include="ContentTypes\SubscribeElement\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5ab4012a-f27f-4111-a5c5-db4170b5e90d}</SharePointProjectItemId>
     </None>
-    <None Include="ContentType\Subscriber\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{b8a43688-1dc3-4239-b129-fd12efe76f1b}</SharePointProjectItemId>
+    <None Include="ContentTypes\Subscriber\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f22f29c0-5030-49a4-87c7-54598eb4377e}</SharePointProjectItemId>
     </None>
-    <None Include="Features\NewListWorkItemER\NewListWorkItemER.feature">
-      <FeatureId>{965a4376-dfe9-493c-92a9-e106bc48cb39}</FeatureId>
+    <None Include="Features\NewsEventReceiver\NewsEventReceiver.feature">
+      <FeatureId>{470be8a0-8a6f-43b8-b374-3550c1bcca44}</FeatureId>
     </None>
-    <None Include="Features\NewsListER\NewsListER.feature">
-      <FeatureId>{a9b7687b-b524-4bd5-92a7-44a81d4c5db0}</FeatureId>
+    <None Include="Features\WorkItemEventRerceiver\WorkItemEventRerceiver.feature">
+      <FeatureId>{bc196a25-aa82-4451-88cf-b7e30a417a83}</FeatureId>
+    </None>
+    <None Include="Features\SubscribtionDataObjects\SubscribtionDataObjects.feature">
+      <FeatureId>{e212f6fb-3917-40c9-a1d2-8e188b0c1c07}</FeatureId>
+    </None>
+    <None Include="Features\SubscribtionButton\SubscribtionButton.feature">
+      <FeatureId>{c39dfb72-c9e7-43ad-ab5f-642a6a6d038c}</FeatureId>
     </None>
     <None Include="Features\NewsFeedDataObjects\NewsFeedDataObjects.feature">
-      <FeatureId>{938d597a-6406-4e1a-a918-b38f5e515fb4}</FeatureId>
+      <FeatureId>{14b42633-8b26-4b3a-996a-173b45cff455}</FeatureId>
     </None>
     <None Include="key.snk" />
-    <None Include="Columns\NewsBody\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{20734fbe-408b-4189-a642-e925f72b26d7}</SharePointProjectItemId>
-    </None>
     <None Include="List\Categories\CategoriesInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{b9fef451-f67d-488b-811f-00aef7f704b8}</SharePointProjectItemId>
+      <SharePointProjectItemId>{69938ec2-b305-4873-9cff-c11a42f2c4ce}</SharePointProjectItemId>
     </None>
     <None Include="List\Categories\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{7c3cf6d7-5e57-427e-abfe-6ced5d22cc10}</SharePointProjectItemId>
+      <SharePointProjectItemId>{11e02410-93f1-4c53-b977-6fd90e9e852f}</SharePointProjectItemId>
     </None>
     <None Include="List\Comments\CommentsInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{12643ce8-2434-4299-906e-5c5e9ce2867b}</SharePointProjectItemId>
+      <SharePointProjectItemId>{ca04939c-3c2c-4753-9c99-115230ef7086}</SharePointProjectItemId>
     </None>
     <None Include="List\Comments\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{adeceb97-c9d8-4cf2-9d3f-b80c21698c9b}</SharePointProjectItemId>
+      <SharePointProjectItemId>{9931e442-edc7-44a8-b0d0-97b92eabe375}</SharePointProjectItemId>
     </None>
-    <None Include="List\ImageLibrary\ImageLibraryInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{12862a8a-3a8c-46c3-910b-9b98bc85d83c}</SharePointProjectItemId>
+    <None Include="List\NewsImages\NewsImagesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ccd5703d-2d0e-416e-a884-8e91268306e1}</SharePointProjectItemId>
     </None>
-    <None Include="List\ImageLibrary\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{03933130-de25-4119-95d5-527ce91668fc}</SharePointProjectItemId>
+    <None Include="List\NewsImages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fda30af1-dcfe-4fc3-b64b-04afe553b4ba}</SharePointProjectItemId>
     </None>
-    <None Include="List\ListNews\NewDataER\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{5849d32d-fa42-4465-bb64-e1138dd2d54b}</SharePointProjectItemId>
+    <None Include="List\NewsList\NewDataER\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f57272e2-eb14-4c7d-95b8-f95ae0180ece}</SharePointProjectItemId>
     </None>
-    <None Include="List\ListNews\NewDataWorkItemER\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{e70cfdd9-17fc-4749-839b-c4fe40f103d9}</SharePointProjectItemId>
+    <None Include="List\NewsList\NewDataWorkItemER\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b90e0703-aa83-4a25-9ec9-ae3f6d95657f}</SharePointProjectItemId>
     </None>
-    <None Include="List\ListNews\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{7a6f2da9-4feb-4711-86b5-8d5dae017091}</SharePointProjectItemId>
+    <None Include="List\NewsList\NewsListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e828ac25-65a6-4949-8d59-670bc7d1d42b}</SharePointProjectItemId>
     </None>
-    <None Include="List\ListNews\NewsInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{5599eb7a-dd5a-4b12-ba31-29e775496d78}</SharePointProjectItemId>
+    <None Include="List\NewsList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7da4c104-74b0-491c-8a9a-7e5cd47e57ed}</SharePointProjectItemId>
     </None>
     <None Include="List\SubscribeElementList\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{6826a27f-2350-4de3-81d7-313546195357}</SharePointProjectItemId>
+      <SharePointProjectItemId>{d6e0241a-3cfc-4dbb-b1f8-828b29a48276}</SharePointProjectItemId>
     </None>
     <None Include="List\SubscribeElementList\SubscribeElementListInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{9c896565-9fe0-47c5-9ecd-3ac576fda715}</SharePointProjectItemId>
+      <SharePointProjectItemId>{624c1d28-aab4-4e6b-8f38-fd9acaa9aa37}</SharePointProjectItemId>
     </None>
     <None Include="List\SubscriberList\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{8db293d7-b74d-4637-8e38-7a875531c268}</SharePointProjectItemId>
+      <SharePointProjectItemId>{7a8cde41-8161-46d2-b41b-b0061a0afda6}</SharePointProjectItemId>
     </None>
     <None Include="List\SubscriberList\SubscriberListInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{5367b989-45b5-4df0-b431-1614f2a306ac}</SharePointProjectItemId>
+      <SharePointProjectItemId>{e7727233-6750-4b6f-8666-1a9d171ee6e0}</SharePointProjectItemId>
     </None>
     <None Include="Package\Package.package">
       <PackageId>{7fe3ed30-b9b6-4ec6-9bd4-934b63ab29e8}</PackageId>
@@ -191,74 +207,85 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
+    <None Include="SubscribeButton\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{07ce2f1f-f77e-475f-b722-d4b85cdbfb70}</SharePointProjectItemId>
+    </None>
+    <None Include="SubscribeButton\SubscribeButton.webpart" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Columns\CategoryLookup\Elements.xml">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="Columns\BandName\Elements.xml" />
+    <Content Include="Columns\CategoryLookup\Elements.xml" />
     <Content Include="Columns\CategoryName\Elements.xml" />
     <Content Include="Columns\CommentBody\Elements.xml" />
     <Content Include="Columns\CompanyName\Elements.xml" />
     <Content Include="Columns\FinanceScope\Elements.xml" />
     <Content Include="Columns\IsThumbnail\Elements.xml" />
     <Content Include="Columns\MusicGenre\Elements.xml" />
+    <Content Include="Columns\NewsBody\Elements.xml" />
     <Content Include="Columns\NewsLookup\Elements.xml" />
-    <Content Include="Columns\Readed\Elements.xml" />
-    <Content Include="Columns\ScienceBranch\Elements.xml" />
+    <Content Include="Columns\Reade\Elements.xml" />
+    <Content Include="Columns\ScienceBrach\Elements.xml" />
     <Content Include="Columns\ScienceType\Elements.xml" />
     <Content Include="Columns\SubscribeDate\Elements.xml" />
-    <Content Include="ContentType\Category\Elements.xml" />
-    <Content Include="ContentType\CommentCT\Elements.xml" />
-    <Content Include="ContentType\FinanceNews\Elements.xml" />
-    <Content Include="ContentType\MusicNews\Elements.xml" />
-    <Content Include="ContentType\NewsBase\Elements.xml" />
-    <Content Include="ContentType\NewsImage\Elements.xml" />
-    <Content Include="ContentType\ScienceNews\Elements.xml" />
-    <Content Include="ContentType\SubscribeElement\Elements.xml" />
-    <Content Include="ContentType\Subscriber\Elements.xml" />
-    <Content Include="Features\NewListWorkItemER\NewListWorkItemER.Template.xml">
-      <DependentUpon>NewListWorkItemER.feature</DependentUpon>
+    <Content Include="ContentTypes\Category\Elements.xml" />
+    <Content Include="ContentTypes\CommentCT\Elements.xml" />
+    <Content Include="ContentTypes\FinanceNews\Elements.xml" />
+    <Content Include="ContentTypes\MusicNews\Elements.xml" />
+    <Content Include="ContentTypes\NewsBase\Elements.xml" />
+    <Content Include="ContentTypes\NewsImage\Elements.xml" />
+    <Content Include="ContentTypes\ScienceNews\Elements.xml" />
+    <Content Include="ContentTypes\SubscribeElement\Elements.xml" />
+    <Content Include="ContentTypes\Subscriber\Elements.xml" />
+    <Content Include="Features\NewsEventReceiver\NewsEventReceiver.Template.xml">
+      <DependentUpon>NewsEventReceiver.feature</DependentUpon>
     </Content>
-    <Content Include="Features\NewsListER\NewsListER.Template.xml">
-      <DependentUpon>NewsListER.feature</DependentUpon>
+    <Content Include="Features\WorkItemEventRerceiver\WorkItemEventRerceiver.Template.xml">
+      <DependentUpon>WorkItemEventRerceiver.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SubscribtionDataObjects\SubscribtionDataObjects.Template.xml">
+      <DependentUpon>SubscribtionDataObjects.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SubscribtionButton\SubscribtionButton.Template.xml">
+      <DependentUpon>SubscribtionButton.feature</DependentUpon>
     </Content>
     <Content Include="Features\NewsFeedDataObjects\NewsFeedDataObjects.Template.xml">
       <DependentUpon>NewsFeedDataObjects.feature</DependentUpon>
     </Content>
-    <Content Include="Columns\NewsBody\Elements.xml" />
+    <Content Include="List\NewsList\News.aspx" />
     <Content Include="List\Categories\CategoriesInstance\Elements.xml" />
     <Content Include="List\Categories\Elements.xml" />
     <Content Include="List\Categories\Schema.xml" />
     <Content Include="List\Comments\CommentsInstance\Elements.xml" />
     <Content Include="List\Comments\Elements.xml" />
     <Content Include="List\Comments\Schema.xml" />
-    <Content Include="List\ImageLibrary\EditDlg.htm" />
-    <Content Include="List\ImageLibrary\Elements.xml" />
-    <Content Include="List\ImageLibrary\FileDlg.htm" />
-    <Content Include="List\ImageLibrary\ImageLibraryInstance\Elements.xml" />
-    <Content Include="List\ImageLibrary\Repair.aspx" />
-    <Content Include="List\ImageLibrary\Schema.xml" />
-    <Content Include="List\ImageLibrary\Upload.aspx" />
-    <Content Include="List\ListNews\News.aspx" />
-    <Content Include="List\ListNews\Elements.xml" />
-    <Content Include="List\ListNews\NewDataER\Elements.xml" />
-    <Content Include="List\ListNews\NewDataWorkItemER\Elements.xml" />
-    <Content Include="List\ListNews\Schema.xml" />
-    <Content Include="List\ListNews\NewsInstance\Elements.xml" />
+    <Content Include="List\NewsImages\EditDlg.htm" />
+    <Content Include="List\NewsImages\Elements.xml" />
+    <Content Include="List\NewsImages\FileDlg.htm" />
+    <Content Include="List\NewsImages\NewsImagesInstance\Elements.xml" />
+    <Content Include="List\NewsImages\Repair.aspx" />
+    <Content Include="List\NewsImages\Schema.xml" />
+    <Content Include="List\NewsImages\Upload.aspx" />
+    <Content Include="List\NewsList\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="List\NewsList\NewDataER\Elements.xml" />
+    <Content Include="List\NewsList\NewDataWorkItemER\Elements.xml" />
+    <Content Include="List\NewsList\NewsListInstance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="List\NewsList\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="List\SubscribeElementList\Elements.xml" />
     <Content Include="List\SubscribeElementList\Schema.xml" />
     <Content Include="List\SubscribeElementList\SubscribeElementListInstance\Elements.xml" />
     <Content Include="List\SubscriberList\Elements.xml" />
     <Content Include="List\SubscriberList\Schema.xml" />
     <Content Include="List\SubscriberList\SubscriberListInstance\Elements.xml" />
+    <Content Include="SubscribeButton\Elements.xml" />
+    <Content Include="SubscribeButton\SubscribeButtonUserControl.ascx" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SubscriptionJob\SubscriptionJob.csproj">
-      <Project>{496944f5-eacb-4d38-83b7-9afec8b1b9a5}</Project>
-      <Name>SubscriptionJob</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

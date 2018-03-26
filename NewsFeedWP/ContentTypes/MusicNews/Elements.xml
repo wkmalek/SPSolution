@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: NewsBase (NewsDataObjects\NewsBase) (0x0100C6414F7AC5D84BB1BBAD3A8A0F555A2F) -->
+  <ContentType ID="0x0100C6414F7AC5D84BB1BBAD3A8A0F555A2F007464572BD1CE43A4A7DCE1470A2B6E4F" Name="MusicNews" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{079faa03-b24e-49d3-b2c1-bd2a7fba3ca9}" DisplayName="Band Name" Required="FALSE" Name="BandName" />
+      <FieldRef ID="{536a1424-359e-4aef-a911-20d6cedc1743}" DisplayName="Music Genre" Required="FALSE" Name="MusicGenre" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

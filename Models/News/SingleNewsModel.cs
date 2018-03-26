@@ -17,7 +17,6 @@ namespace Models.News
         {
             NewsModel newsModel = newsRepo.GetSingleElementByID(int.Parse(ID));
             NewsViewModel newsViewModel = new NewsViewModel(newsModel);
-
             return newsViewModel;
         }
     }

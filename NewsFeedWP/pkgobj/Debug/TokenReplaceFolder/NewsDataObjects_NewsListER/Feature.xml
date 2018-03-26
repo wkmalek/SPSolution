@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="NewsDataObjects_EventReceiver" Id="5a756284-1268-4416-84ef-c556a5bdfce0" Scope="Web">
-  <ElementManifests>
-    <ElementManifest Location="NewDataER\Elements.xml" />
-  </ElementManifests>
-</Feature>

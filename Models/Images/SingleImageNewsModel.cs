@@ -21,6 +21,7 @@ namespace Models.Images
             DateCreated = model._DCDateCreated;
             DateModified = model._DateModified;
             IsThumbnail = model.IsThumb;
+            PostUrl = model.FileName;
         }
     }
 }

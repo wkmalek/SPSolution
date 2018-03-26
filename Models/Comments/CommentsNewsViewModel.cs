@@ -10,6 +10,7 @@ namespace Models.Comments
         public List<CommentNewsViewModel> Comments { get; private set; }
         public CommentsNewsViewModel(List<CommentNewsModel> models)
         {
+            Comments = new List<CommentNewsViewModel>();
             foreach(CommentNewsModel item in models)
             {
                 Comments.Add(new CommentNewsViewModel(item));

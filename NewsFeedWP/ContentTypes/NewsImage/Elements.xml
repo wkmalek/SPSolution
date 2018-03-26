@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Image (0x0101009148F5A04DDD49CBA7127AADA5FB792B00AADE34325A8B49CDA8BB4DB53328F214) -->
+  <ContentType ID="0x0101009148F5A04DDD49CBA7127AADA5FB792B00AADE34325A8B49CDA8BB4DB53328F2140048F66CAB29224E56A9132D247556FDCF" Name="NewsImage" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{8737de0e-2192-4204-bf43-333f41233fba}" DisplayName="News Lookup" Required="FALSE" Name="NewsLookup" />
+      <FieldRef ID="{31914a15-453c-4478-b6cc-1378fba6a9af}" DisplayName="Is Thumbnail" Required="FALSE" Name="IsThumbnail" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

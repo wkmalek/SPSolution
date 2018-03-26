@@ -9,6 +9,6 @@
 
 <asp:Repeater runat="server" ID="Repeater">
     <ItemTemplate>
-        <asp:Image runat="server" ID="Image" ImageUrl='<%# "~/" + Eval("Url") %>'/>
+        <asp:Image runat="server" ID="Image" ImageUrl='<%# Eval("PostUrl") %>'/>
     </ItemTemplate>
 </asp:Repeater>

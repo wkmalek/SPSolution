@@ -10,6 +10,7 @@ namespace Repository.MappingObj
     {
         string ListName { get; }
         T Translate(SPListItem item);
+        void Translate(T model, SPListItem item);
         List<T> Translate(SPListItemCollection items);
     }
 }

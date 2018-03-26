@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="NewsList" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/NewsList" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100C6414F7AC5D84BB1BBAD3A8A0F555A2F" Name="NewsBase" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{6298e4ab-f05e-4794-b3bd-716543844d43}" DisplayName="Category Lookup" Required="TRUE" Name="CategoryLookup" /><FieldRef ID="{8dd04645-2594-4b66-97ef-95c50f1ed5b0}" DisplayName="News Body" Required="FALSE" Name="NewsBody" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentType ID="0x0100C6414F7AC5D84BB1BBAD3A8A0F555A2F007464572BD1CE43A4A7DCE1470A2B6E4F" Name="MusicNews" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{079faa03-b24e-49d3-b2c1-bd2a7fba3ca9}" DisplayName="Band Name" Required="FALSE" Name="BandName" /><FieldRef ID="{536a1424-359e-4aef-a911-20d6cedc1743}" DisplayName="Music Genre" Required="FALSE" Name="MusicGenre" /></FieldRefs></ContentType><ContentType ID="0x0100C6414F7AC5D84BB1BBAD3A8A0F555A2F00E60ECE45E3B9466F808B87A8BDC4E86F" Name="FinanceNews" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{652b260f-6cfc-4e73-a923-1b0ee74f979a}" DisplayName="Finance Scope" Required="FALSE" Name="FinanceScope" Format="Dropdown" /><FieldRef ID="{d3583c2c-4855-4984-b81f-b0beaa4fe711}" DisplayName="Company Name" Required="FALSE" Name="CompanyName" /></FieldRefs></ContentType><ContentType ID="0x0100C6414F7AC5D84BB1BBAD3A8A0F555A2F007ED25794A06C4DF8ABA968BFD3E1DCB2" Name="ScienceNews" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{231ffecb-6b38-4ffd-b191-eaf9f8c36f35}" DisplayName="Science Brach" Required="FALSE" Name="ScienceBrach" /><FieldRef ID="{bc01c3d9-3f9e-4de6-a41e-5b652f7378df}" DisplayName="Science Type" Required="FALSE" Name="ScienceType" Format="Dropdown" /></FieldRefs></ContentType></ContentTypes>
+    <Fields>
+       
+    <Field ID="{6298e4ab-f05e-4794-b3bd-716543844d43}" Name="CategoryLookup" DisplayName="Category Lookup" List="Lists/Categories" ShowField="CategoryName" Required="TRUE" Type="Lookup" Group="Custom Site Columns"></Field><Field ID="{8dd04645-2594-4b66-97ef-95c50f1ed5b0}" Name="NewsBody" DisplayName="News Body" Type="Note" Required="FALSE" Group="Custom Site Columns"></Field><Field ID="{079faa03-b24e-49d3-b2c1-bd2a7fba3ca9}" Name="BandName" DisplayName="Band Name" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field><Field ID="{536a1424-359e-4aef-a911-20d6cedc1743}" Name="MusicGenre" DisplayName="Music Genre" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field><Field ID="{652b260f-6cfc-4e73-a923-1b0ee74f979a}" Name="FinanceScope" DisplayName="Finance Scope" Type="Choice" Format="Dropdown" BaseType="Text" Required="FALSE" Group="Custom Site Columns"><Default>Micro business</Default><CHOICES><CHOICE>Micro business</CHOICE><CHOICE>Mid business</CHOICE><CHOICE>Macro business</CHOICE><CHOICE>Micro economy</CHOICE><CHOICE>Macro economy</CHOICE></CHOICES></Field><Field ID="{d3583c2c-4855-4984-b81f-b0beaa4fe711}" Name="CompanyName" DisplayName="Company Name" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field><Field ID="{231ffecb-6b38-4ffd-b191-eaf9f8c36f35}" Name="ScienceBrach" DisplayName="Science Brach" Type="Text" Required="FALSE" Group="Custom Site Columns"></Field><Field ID="{bc01c3d9-3f9e-4de6-a41e-5b652f7378df}" Name="ScienceType" DisplayName="Science Type" Type="Choice" Required="FALSE" Format="Dropdown" BaseType="Text" Group="Custom Site Columns"><Default>Research</Default><CHOICES><CHOICE>Research</CHOICE><CHOICE>Discovery</CHOICE><CHOICE>Theory confirmation</CHOICE></CHOICES></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+          
+        <FieldRef Name="Attachments"></FieldRef><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="CategoryLookup" /><FieldRef Name="NewsBody" /><FieldRef Name="BandName" /><FieldRef Name="MusicGenre" /><FieldRef Name="FinanceScope" /><FieldRef Name="CompanyName" /><FieldRef Name="ScienceBrach" /><FieldRef Name="ScienceType" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="News.aspx" SetupPath="features\NewsDataObjects_NewsFeedDataObjects\NewsList\News.aspx" WebPartZoneID="Main" UseLegacyForm="TRUE" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

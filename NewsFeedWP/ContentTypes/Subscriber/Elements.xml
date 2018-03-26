@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01005882FEB1547E4B738FE3B736DCCA64CE" Name="Subscriber" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{5928ff1f-daa1-406c-b4a9-190485a448cb}" DisplayName="$Resources:core,User_ID;" Required="TRUE" Name="User" Sealed="TRUE" />
+      <FieldRef ID="{9bff6f85-a410-4d1a-ba7b-700b6d8bb53b}" DisplayName="Subscribe Date" Required="TRUE" Name="SubscribeDate" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

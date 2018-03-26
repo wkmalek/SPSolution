@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="NewsDataObjects WorkListWorkItem" Id="309924b6-0ca1-4509-851d-3669c017a140" Scope="Web">
-  <ElementManifests>
-    <ElementManifest Location="NewDataWorkItemER\Elements.xml" />
-  </ElementManifests>
-</Feature>

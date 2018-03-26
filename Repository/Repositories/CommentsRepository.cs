@@ -16,5 +16,7 @@ namespace Repository.Repositories
             SPListItemCollection commentsList = list.GetItems(query);
             return mapper.Translate(commentsList);
         }
+
+        
     }
 }

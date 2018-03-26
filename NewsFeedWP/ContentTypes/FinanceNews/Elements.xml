@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: NewsBase (NewsDataObjects\NewsBase) (0x0100C6414F7AC5D84BB1BBAD3A8A0F555A2F) -->
+  <ContentType ID="0x0100C6414F7AC5D84BB1BBAD3A8A0F555A2F00E60ECE45E3B9466F808B87A8BDC4E86F" Name="FinanceNews" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{652b260f-6cfc-4e73-a923-1b0ee74f979a}" DisplayName="Finance Scope" Required="FALSE" Name="FinanceScope" Format="Dropdown" />
+      <FieldRef ID="{d3583c2c-4855-4984-b81f-b0beaa4fe711}" DisplayName="Company Name" Required="FALSE" Name="CompanyName" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

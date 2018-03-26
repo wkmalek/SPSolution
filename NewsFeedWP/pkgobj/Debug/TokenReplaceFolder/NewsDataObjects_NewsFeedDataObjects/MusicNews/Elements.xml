@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <!-- Parent ContentType: NewsBase (NewsFeedWP\NewsBase) (0x0100E7C219E579514259839E0CB6060C8E44) -->
-  <ContentType ID="0x0100E7C219E579514259839E0CB6060C8E4400486450332B0F4BC490F99BEB39B7ABC4" Name="MusicNews" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0" Overwrite="TRUE">
+  <!-- Parent ContentType: NewsBase (NewsDataObjects\NewsBase) (0x0100C6414F7AC5D84BB1BBAD3A8A0F555A2F) -->
+  <ContentType ID="0x0100C6414F7AC5D84BB1BBAD3A8A0F555A2F007464572BD1CE43A4A7DCE1470A2B6E4F" Name="MusicNews" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
     <FieldRefs>
-      <FieldRef ID="{832dcaad-e1e9-4a50-8831-ba4e0c8aa8e1}" DisplayName="Band name" Required="FALSE" Name="BandName" />
-      <FieldRef ID="{5326855e-370a-4a17-9262-0c46d3cc2118}" DisplayName="Music genre" Required="FALSE" Name="MusicGenre" />
+      <FieldRef ID="{079faa03-b24e-49d3-b2c1-bd2a7fba3ca9}" DisplayName="Band Name" Required="FALSE" Name="BandName" />
+      <FieldRef ID="{536a1424-359e-4aef-a911-20d6cedc1743}" DisplayName="Music Genre" Required="FALSE" Name="MusicGenre" />
     </FieldRefs>
   </ContentType>
 </Elements>

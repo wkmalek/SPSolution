@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
   <Field
-       ID="{38c63402-040d-4842-84f9-92be63c10066}"
+       ID="{d3583c2c-4855-4984-b81f-b0beaa4fe711}"
        Name="CompanyName"
-       DisplayName="Company name"
+       DisplayName="Company Name"
        Type="Text"
        Required="FALSE"
-       Group="Custom Site Columns"
-    Overwrite="TRUE">
+       Group="Custom Site Columns">
   </Field>
 </Elements>
