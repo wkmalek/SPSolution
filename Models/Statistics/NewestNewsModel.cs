@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using PocoModels;
 
 namespace Models.Statistics
 {
@@ -18,8 +19,12 @@ namespace Models.Statistics
             NewsModel news = newsRepo.GetNewestNews();
             List<ImagesModel> imageList = imageRepo.GetImagesByPostID(news.ID.ToString());
             ImagesModel image = imageList.Where(x => x.IsThumb == true).SingleOrDefault();
-            return new NewestNewsModelSingle() {_Description=news.NewsTitle, _imageUrl=image.Url,_listUrl="",_Title=news.NewsTitle };
-
+            string imgUrl;
+            if (image != null)
+                imgUrl = image.FileName;
+            else
+                imgUrl = "";
+            return new NewestNewsModelSingle() {_Description=news.NewsTitle, _imageUrl=imgUrl, _listUrl="",_Title=news.NewsTitle };
         }
     }
 }

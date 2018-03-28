@@ -61,8 +61,18 @@
       <DependentUpon>NewestNewsStats.ascx</DependentUpon>
     </Compile>
     <Compile Include="NewestNews\NewestNews.cs" />
+    <Compile Include="NewsStatsWP\INewsStatsWPView.cs" />
+    <Compile Include="NewsStatsWP\NewsStatsWP.ascx.cs">
+      <DependentUpon>NewsStatsWP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsStatsWP\NewsStatsWP.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewsStatsWP.ascx</DependentUpon>
+    </Compile>
     <Compile Include="NewsStats\NewsStats.cs" />
     <Compile Include="Presenter\NewestNewsPresenter.cs" />
+    <Compile Include="Presenter\NewsStatsWPPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -92,6 +102,10 @@
     <None Include="NewestNews\NewestNews.webpart" />
     <None Include="NewestNews\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{ebe09546-6af9-4eb3-bebd-a1cdd84ea790}</SharePointProjectItemId>
+    </None>
+    <None Include="NewsStatsWP\NewsStatsWP.webpart" />
+    <None Include="NewsStatsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0cc575e8-fc56-450e-bf1d-aacd5795102f}</SharePointProjectItemId>
     </None>
     <None Include="NewsStats\NewsStats.webpart" />
     <None Include="NewsStats\SharePointProjectItem.spdata">
@@ -129,6 +143,11 @@
     <Content Include="NewestNewsStyle\images.jpg" />
     <Content Include="NewestNewsStyle\Style.css" />
     <Content Include="NewestNews\Elements.xml" />
+    <Content Include="NewsStatsWP\Elements.xml" />
+    <Content Include="NewsStatsWP\NewsStatsWP.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>NewsStatsWP.ascx.g.cs</LastGenOutput>
+    </Content>
     <Content Include="NewsStats\Elements.xml" />
   </ItemGroup>
   <ItemGroup>

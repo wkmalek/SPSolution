@@ -30,3 +30,11 @@ C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsStai
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsStaisticsWebParts\obj\Debug\NewsStaisticsWebParts.dll
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsStaisticsWebParts\obj\Debug\NewsStaisticsWebParts.pdb
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsStaisticsWebParts\obj\Debug\NewsStaisticsWebParts.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsStaisticsWebParts\bin\Debug\Models.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsStaisticsWebParts\bin\Debug\SharedLib.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsStaisticsWebParts\bin\Debug\PocoModels.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsStaisticsWebParts\bin\Debug\Repository.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsStaisticsWebParts\bin\Debug\Models.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsStaisticsWebParts\bin\Debug\SharedLib.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsStaisticsWebParts\bin\Debug\PocoModels.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\NewsStaisticsWebParts\bin\Debug\Repository.pdb

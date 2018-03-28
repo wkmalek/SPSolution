@@ -55,5 +55,10 @@ namespace Repository
             }
         }
 
+        ~AbstractRepository()
+        {
+            context.Dispose();
+            userHelper.Dispose();
+        }
     }
 }

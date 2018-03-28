@@ -1,11 +1,9 @@
-﻿using Models.Comments;
-using Models.Images;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Models.Post
+namespace PocoModels
 {
     public class NewsModel:BaseModel
     {
@@ -18,6 +16,5 @@ namespace Models.Post
         public string MusicGenre { get; set; }
         public string ScienceType { get; set; }
         public string ScienceBranch { get; set; }
-
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Models.Images
+namespace PocoModels
 {
     public class ImagesModel:BaseModel
     {

@@ -21,6 +21,5 @@ namespace NewsStaisticsWebParts.Presenter
             _pView._listUrl = model._listUrl;
             _pView._Title = model._Title;
         }
-
     }
 }

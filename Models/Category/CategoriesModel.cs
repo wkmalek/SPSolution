@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Repository;
 using Repository.Repositories;
+using PocoModels;
 
 namespace Models.Category
 {

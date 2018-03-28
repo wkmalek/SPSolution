@@ -2,8 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Web.UI.WebControls.WebParts;
+using Microsoft.SharePoint;
+using Microsoft.SharePoint.Administration;
+using Microsoft.SharePoint.UserCode;
 
 namespace SharedLib
 {

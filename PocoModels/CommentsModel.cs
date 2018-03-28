@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Models.Comments
+namespace PocoModels
 {
     public class CommentsModel:BaseModel
     { 

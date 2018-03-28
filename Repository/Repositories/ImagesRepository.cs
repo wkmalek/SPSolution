@@ -1,5 +1,5 @@
 ﻿using Microsoft.SharePoint;
-using Models.Images;
+using PocoModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;

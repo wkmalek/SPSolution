@@ -2,4 +2,3 @@ C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\PocoMode
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\PocoModels\bin\Debug\PocoModels.pdb
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\PocoModels\obj\Debug\PocoModels.dll
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\PocoModels\obj\Debug\PocoModels.pdb
-C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\PocoModels\obj\Debug\PocoModels.csprojResolveAssemblyReference.cache

@@ -8,5 +8,7 @@
     <ElementManifest Location="CssSandboxedWebParts\Elements.xml" />
     <ElementFile Location="CssSandboxedWebParts\Sample.txt" />
     <ElementFile Location="CssSandboxedWebParts\NewestNews.css" />
+    <ElementManifest Location="NewsStatsWP\Elements.xml" />
+    <ElementFile Location="NewsStatsWP\NewsStatsWP.webpart" />
   </ElementManifests>
 </Feature>

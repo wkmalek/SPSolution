@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Repository.Repositories
 {
-    public class UserHelper
+    public class UserHelper:IDisposable
     {
         private readonly string Url;
         public SPSite site { get; private set; }
@@ -16,8 +16,11 @@ namespace Repository.Repositories
         public UserHelper(string Url)
         {
             this.Url = Url;
-            site = new SPSite(Url);
-            web = site.OpenWeb();
+            //site = new SPSite(Url);
+            site = SPContext.Current.Site;
+            web = site.RootWeb;
+
+            //dsweb = site.OpenWeb();
         }
 
         public UserModel GetUserByID(string ID)
@@ -36,6 +39,12 @@ namespace Repository.Repositories
                 Url = this.Url + "/_layouts/userdisp.aspx?ID=" + user.ID.ToString(),
             };
             return model;
+        }
+
+        public void Dispose()
+        {
+           // site.Dispose();
+           // web.Dispose();
         }
     }
 }

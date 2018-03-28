@@ -2,3 +2,12 @@ C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SharedLi
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SharedLib\bin\Debug\SharedLib.pdb
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SharedLib\obj\Debug\SharedLib.dll
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SharedLib\obj\Debug\SharedLib.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SharedLib\bin\Debug\Microsoft.SharePoint.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SharedLib\bin\Debug\Microsoft.SharePoint.Search.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SharedLib\bin\Debug\Microsoft.Web.CommandUI.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SharedLib\bin\Debug\Microsoft.BusinessData.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SharedLib\bin\Debug\Microsoft.SharePoint.Security.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SharedLib\bin\Debug\Microsoft.SharePoint.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SharedLib\bin\Debug\Microsoft.SharePoint.Search.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SharedLib\bin\Debug\Microsoft.BusinessData.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\SharedLib\bin\Debug\Microsoft.SharePoint.Security.xml

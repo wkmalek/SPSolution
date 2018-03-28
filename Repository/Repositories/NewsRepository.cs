@@ -1,9 +1,8 @@
-﻿using Models.Post;
+﻿using PocoModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Models;
 using Microsoft.SharePoint;
 
 namespace Repository.Repositories
@@ -23,6 +22,21 @@ namespace Repository.Repositories
             List<NewsModel> output =  mapper.Translate(items);
             List<NewsModel> filteredOutput = output.Where(x=> !subElementList.Any(y => x.ID != y.NewsID)).ToList();
             return filteredOutput;
+        }
+
+        public float GetNewsPerDay()
+        {
+            int newsCount = list.ItemCount;
+            DateTime siteCreated = context.GetSiteCreatedDate();
+            TimeSpan span = DateTime.Now.Subtract(siteCreated);
+            int siteLifetime = span.Days;
+            return newsCount / siteLifetime;
+
+        }
+
+        public int GetNewsCount()
+        {
+            return list.ItemCount;
         }
 
         public NewsModel GetNewestNews()

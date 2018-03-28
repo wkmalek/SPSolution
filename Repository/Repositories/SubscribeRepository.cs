@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Models;
 using Microsoft.SharePoint;
-using Models.Category;
+using PocoModels;
 
 namespace Repository.Repositories
 {

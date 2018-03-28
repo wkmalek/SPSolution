@@ -6,8 +6,9 @@ using System.Text;
 
 namespace Repository
 {
-    internal class ContextHelper
+    internal class ContextHelper : IDisposable
     {
+
         private readonly string Url;
         public SPSite site {get; private set;}
         public SPWeb web { get; private set; }
@@ -16,9 +17,22 @@ namespace Repository
         public ContextHelper(string Url, string listName)
         {
             this.Url = Url;
-            site = new SPSite(Url);
-            web = site.OpenWeb();
+            //site = new SPSite(Url);
+            site = SPContext.Current.Site;
+            //web = site.OpenWeb();
+            web = site.RootWeb;
             list = web.Lists[listName];
+        }
+
+        public DateTime GetSiteCreatedDate()
+        {
+            return web.Created;
+        }
+
+        public void Dispose()
+        {
+            //site.Dispose();
+            //web.Dispose();
         }
     }
 }
