@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="NewsDataObjects" Id="fded780a-ac28-4194-8841-0869e61d12d2" Scope="Web">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="fded780a-ac28-4194-8841-0869e61d12d2" Scope="Web" Title="NewsDataObjects">
   <ElementManifests>
     <ElementManifest Location="BandName\Elements.xml" />
     <ElementManifest Location="CategoryName\Elements.xml" />

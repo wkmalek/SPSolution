@@ -71,5 +71,6 @@ C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\WebParts
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\WebParts\bin\Debug\Microsoft.SharePoint.Portal.xml
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\WebParts\bin\Debug\Microsoft.Office.Server.Search.Connector.xml
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\WebParts\bin\Debug\Microsoft.Office.DocumentManagement.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\WebParts\obj\Debug\NewsFeed.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\WebParts\obj\Debug\WebParts.dll
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\SPSolution\WebParts\obj\Debug\WebParts.pdb

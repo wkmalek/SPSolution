@@ -4,13 +4,20 @@
     <Assembly Location="NewsFeedWP.dll" DeploymentTarget="GlobalAssemblyCache">
       <SafeControls>
         <SafeControl Assembly="NewsFeedWP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=10ad000354663770" Namespace="NewsFeedWP.List.NewsList" TypeName="*" />
+        <SafeControl Assembly="NewsFeedWP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=10ad000354663770" Namespace="SubscriptionJob.SubscribeButton" TypeName="*" />
       </SafeControls>
     </Assembly>
   </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\SubscriptionJob\SubscribeButton\SubscribeButtonUserControl.ascx" />
+  </TemplateFiles>
   <FeatureManifests>
     <FeatureManifest Location="NewsDataObjects_NewsFeedDataObjects\Feature.xml" />
-    <FeatureManifest Location="NewsDataObjects_Feature1\Feature.xml" />
-    <FeatureManifest Location="NewsDataObjects_Feature2\Feature.xml" />
-    <FeatureManifest Location="NewsDataObjects_Feature3\Feature.xml" />
+    <FeatureManifest Location="NewsDataObjects_NewsEventReceiver\Feature.xml" />
+    <FeatureManifest Location="NewsDataObjects_WorkItemEventRerceiver\Feature.xml" />
+    <FeatureManifest Location="NewsDataObjects_SubscribtionDataObjects\Feature.xml" />
+    <FeatureManifest Location="NewsDataObjects_SubscribtionButton\Feature.xml" />
+    <FeatureManifest Location="NewsDataObjects_SubscriptionWorkItemJob\Feature.xml" />
+    <FeatureManifest Location="NewsDataObjects_SubscriptionJob\Feature.xml" />
   </FeatureManifests>
 </Solution>

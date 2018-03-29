@@ -17,9 +17,12 @@ namespace Repository
         protected IMapper<T> mapper;
         public AbstractRepository()
         {
-            mapper = mapperFactory.GetMapper(SPContext.Current.Web.Url);
-            userHelper = new UserHelper(SPContext.Current.Web.Url);
-            Connect(SPContext.Current.Web.Url, mapper.ListName);
+            if(SPContext.Current != null)
+            { 
+                mapper = mapperFactory.GetMapper(SPContext.Current.Web.Url);
+                userHelper = new UserHelper(SPContext.Current.Web.Url);
+                Connect(SPContext.Current.Web.Url, mapper.ListName);
+            }
         }
 
         public virtual void Connect(string url, string listName)

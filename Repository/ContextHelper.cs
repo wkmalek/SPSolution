@@ -8,7 +8,6 @@ namespace Repository
 {
     internal class ContextHelper : IDisposable
     {
-
         private readonly string Url;
         public SPSite site {get; private set;}
         public SPWeb web { get; private set; }

@@ -45,30 +45,56 @@ namespace SubscriptionJob
         protected override bool ProcessWorkItem(SPContentDatabase contentDb, SPWorkItemCollection workItems,
             SPWorkItem workItem, SPJobState jobState)
         {
-            SubscribersModel model = new SubscribersModel();
-            bool output = false;
+
             if (workItem == null) throw new ArgumentException("workItem is null");
-            using (SPSite site = new SPSite(workItem.SiteId))
+            try
             {
-                using (SPWeb web = site.OpenWeb(workItem.WebId))
+                using (SPSite site = new SPSite(workItem.SiteId))
                 {
-                    try
+                    using (SPWeb web = site.OpenWeb(workItem.WebId))
                     {
+                        try
+                        {
+                            //TODO CODE HERE
+                            SPList list = web.Lists[workItem.ParentId];
+                            SPListItem listItem = list.GetItemByUniqueId(workItem.ItemGuid);
 
-                        output = model.CheckSubscriptions(workItem, workItems);
+                            SPList subList = web.Lists["SubscriberList"];
+                            SPList elements = web.Lists["SubscribeElementList"];
+                            //TODO Rewrite to caml
+                            for (int i = 0; i < subList.ItemCount; i++)
+                            {
+                                SPListItem item = subList.Items[i];
+                                if (workItem.UserId == (int)item["User"])
+                                {
+                                    SPListItem newSubItem = elements.Items.Add();
+                                    newSubItem["User"] = workItem.UserId;
+                                    newSubItem["NewsID"] = listItem["ID"];
+                                    newSubItem["Reade"] = false;
+                                    newSubItem.Update();
+                                }
+                            }
 
+                        }
+                        catch (Exception e)
+                        {
+                            throw e;
+                        }
+                        finally
+                        {
+                            workItems.SubCollection(site, web, 0, (uint)workItems.Count).DeleteWorkItem(workItem.Id);
+                        }
                     }
-                    catch (Exception e)
-                    {
-                        throw e;
-                    }
-                    finally
-                    {
-                        workItems.SubCollection(site, web, 0, (uint)workItems.Count).DeleteWorkItem(workItem.Id);
-                    }
+
                 }
             }
-            return output; 
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+            return true;
+
         }
     }
 }

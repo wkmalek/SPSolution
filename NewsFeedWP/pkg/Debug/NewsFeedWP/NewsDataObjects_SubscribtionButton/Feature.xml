@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="3fa39c77-493a-41e0-9f1e-1298185ccde0" Scope="Site" Title="SubscriptionButtonWebPart">
+  <ElementManifests>
+    <ElementManifest Location="SubscribeButton\Elements.xml" />
+    <ElementFile Location="SubscribeButton\SubscribeButton.webpart" />
+  </ElementManifests>
+</Feature>

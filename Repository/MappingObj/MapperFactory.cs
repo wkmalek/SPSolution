@@ -32,7 +32,10 @@ namespace Repository.MappingObj
                 mapper = (IMapper<T>)(new CommentsModelMapper(listMap[t]));
             if (t.Split('.').Last() == "ImagesModel")
                 mapper = (IMapper<T>)(new ImagesModelMapper(listMap[t], Url));
-
+            if (t.Split('.').Last() == "SubscribeElementList")
+                mapper = (IMapper<T>)(new SubscribeElementModelMapper(listMap[t]));
+            if (t.Split('.').Last() == "SubscriberList")
+                mapper = (IMapper<T>)(new SubscribeModelMapper(listMap[t]));
             return mapper;
         }
         

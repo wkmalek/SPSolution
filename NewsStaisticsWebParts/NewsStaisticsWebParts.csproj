@@ -60,7 +60,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>NewestNewsStats.ascx</DependentUpon>
     </Compile>
-    <Compile Include="NewestNews\NewestNews.cs" />
     <Compile Include="NewsStatsWP\INewsStatsWPView.cs" />
     <Compile Include="NewsStatsWP\NewsStatsWP.ascx.cs">
       <DependentUpon>NewsStatsWP.ascx</DependentUpon>
@@ -70,7 +69,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>NewsStatsWP.ascx</DependentUpon>
     </Compile>
-    <Compile Include="NewsStats\NewsStats.cs" />
     <Compile Include="Presenter\NewestNewsPresenter.cs" />
     <Compile Include="Presenter\NewsStatsWPPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,17 +97,9 @@
     <None Include="NewestNewsStyle\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{94cb0417-f083-42a9-af96-6b1696636eca}</SharePointProjectItemId>
     </None>
-    <None Include="NewestNews\NewestNews.webpart" />
-    <None Include="NewestNews\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{ebe09546-6af9-4eb3-bebd-a1cdd84ea790}</SharePointProjectItemId>
-    </None>
     <None Include="NewsStatsWP\NewsStatsWP.webpart" />
     <None Include="NewsStatsWP\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{0cc575e8-fc56-450e-bf1d-aacd5795102f}</SharePointProjectItemId>
-    </None>
-    <None Include="NewsStats\NewsStats.webpart" />
-    <None Include="NewsStats\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{9e4886af-b51f-4939-9b5c-3e4eb96b8cb9}</SharePointProjectItemId>
     </None>
     <None Include="Package\Package.package">
       <PackageId>{c7c8fa7e-4613-4056-9c35-5ae7e522ad90}</PackageId>
@@ -142,13 +132,11 @@
     <Content Include="NewestNewsStyle\Elements.xml" />
     <Content Include="NewestNewsStyle\images.jpg" />
     <Content Include="NewestNewsStyle\Style.css" />
-    <Content Include="NewestNews\Elements.xml" />
     <Content Include="NewsStatsWP\Elements.xml" />
     <Content Include="NewsStatsWP\NewsStatsWP.ascx">
       <Generator>SharePointWebPartCodeGenerator</Generator>
       <LastGenOutput>NewsStatsWP.ascx.g.cs</LastGenOutput>
     </Content>
-    <Content Include="NewsStats\Elements.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Models\Models.csproj">

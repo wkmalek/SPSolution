@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="NewsDataObjects Feature1" Id="ed13712e-e3a3-4c99-9916-3af1d8f8dd08" Scope="Web">
-  <ElementManifests>
-    <ElementManifest Location="NewDataER\Elements.xml" />
-  </ElementManifests>
-</Feature>

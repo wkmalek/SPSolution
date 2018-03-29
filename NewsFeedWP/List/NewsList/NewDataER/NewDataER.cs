@@ -28,8 +28,8 @@ namespace NewsFeedWP.List.NewsList.NewDataER
                     {
                         SPListItem newSubItem = elements.Items.Add();
                         newSubItem["User"] = properties.CurrentUserId;
-                        newSubItem["NewsID"] = properties.ListItem["ID"];
-                        newSubItem["Readed"] = false;
+                        newSubItem["NewsLookup"] = properties.ListItem["ID"];
+                        newSubItem["Reade"] = false;
                         newSubItem.Update();
                     }
                 }

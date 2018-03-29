@@ -1,13 +1,191 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project Title="SiteDef" Revision="2" ListDir="" xmlns:ows="Microsoft SharePoint" xmlns="http://schemas.microsoft.com/sharepoint/">
+<Project Title="MySiteDef" Revision="2" ListDir="" xmlns:ows="Microsoft SharePoint" xmlns="http://schemas.microsoft.com/sharepoint/">
   <NavBars>
+    <NavBar Name="SharePoint Top Navigation Bar" Url="/" ID="1002">
+      <NavBarPage Name="Home" Url="" />
+    </NavBar>
+    <NavBar Name="Libraries" Url="_layouts/viewlsts.aspx?BaseType=1" ID="1004">
+      <NavBarPage Name="NewsImages" Url="Lists/NewsImages/Forms/AllItems.aspx" />
+    </NavBar>
+    <NavBar Name="Lists" Url="_layouts/viewlsts.aspx?BaseType=0" ID="1003">
+      <NavBarPage Name="Categories" Url="Lists/Categories/AllItems.aspx" />
+      <NavBarPage Name="NewsList" Url="Lists/NewsList/AllItems.aspx" />
+      <NavBarPage Name="Comments" Url="Lists/Comments/AllItems.aspx" />
+      <NavBarPage Name="SubscriberList" Url="Lists/SubscriberList/AllItems.aspx" />
+      <NavBarPage Name="SubscribeElementList" Url="Lists/SubscribeElementList/AllItems.aspx" />
+    </NavBar>
+    <NavBar Name="Discussions" Url="_layouts/viewlsts.aspx?BaseType=0&amp;ListTemplate=108" ID="1006" />
   </NavBars>
   <Configurations>
     <Configuration ID="0" Name="SiteDef">
       <Lists/>
       <SiteFeatures>
+        <!--DocumentRoutingResources Feature-->
+        <Feature ID="{0c8a9a47-22a9-4798-82f1-00e62a96006e}" Name="FeatureDefinition/0c8a9a47-22a9-4798-82f1-00e62a96006e" SourceVersion="14.0.0.0" />
+        <!--PublishingPrerequisites Feature-->
+        <Feature ID="{a392da98-270b-4e85-9769-04c0fde267aa}" Name="FeatureDefinition/a392da98-270b-4e85-9769-04c0fde267aa" SourceVersion="14.0.0.0" />
+        <!--PublishingSite Feature-->
+        <Feature ID="{f6924d36-2fa8-4f0b-b16d-06b7250180fa}" Name="FeatureDefinition/f6924d36-2fa8-4f0b-b16d-06b7250180fa" SourceVersion="14.0.1.0" />
+        <!--EnhancedTheming Feature-->
+        <Feature ID="{068bc832-4951-11dc-8314-0800200c9a66}" Name="FeatureDefinition/068bc832-4951-11dc-8314-0800200c9a66" SourceVersion="14.0.0.0" />
+        <!--Ratings Feature-->
+        <Feature ID="{915c240e-a6cc-49b8-8b2c-0bff8b553ed3}" Name="FeatureDefinition/915c240e-a6cc-49b8-8b2c-0bff8b553ed3" SourceVersion="14.0.1.0" />
+        <!--NewsDataObjects_SubscribtionButton Feature-->
+        <Feature ID="{3fa39c77-493a-41e0-9f1e-1298185ccde0}" Name="FeatureDefinition/3fa39c77-493a-41e0-9f1e-1298185ccde0" SourceVersion="0.0.0.0" />
+        <!--NewsStaisticsWebParts_NewsStats Feature-->
+        <Feature ID="{b6cd25d6-e233-4ad6-8e19-1413aea29c51}" Name="FeatureDefinition/b6cd25d6-e233-4ad6-8e19-1413aea29c51" SourceVersion="0.0.0.0" />
+        <!--NewsStaisticsWebParts_Feature1 Feature-->
+        <Feature ID="{5c9d74af-4fd9-406b-a04a-1945472f3ee1}" Name="FeatureDefinition/5c9d74af-4fd9-406b-a04a-1945472f3ee1" SourceVersion="0.0.0.0" />
+        <!--WAReports Feature-->
+        <Feature ID="{2acf27a5-f703-4277-9f5d-24d70110b18b}" Name="FeatureDefinition/2acf27a5-f703-4277-9f5d-24d70110b18b" SourceVersion="14.0.0.0">
+          <Properties>
+            <Property Key="GloballyAvailable" Value="true" />
+            <Property Key="RegisterForms" Value="*.xsn" />
+          </Properties>
+        </Feature>
+        <!--CTypes Feature-->
+        <Feature ID="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}" Name="FeatureDefinition/695b6570-a48b-4a8e-8ea5-26ea7fc1d162" SourceVersion="14.0.1.0" />
+        <!--Navigation Feature-->
+        <Feature ID="{89e0306d-453b-4ec5-8d68-42067cdbf98e}" Name="FeatureDefinition/89e0306d-453b-4ec5-8d68-42067cdbf98e" SourceVersion="14.0.0.0" />
+        <!--ExpirationWorkflow Feature-->
+        <Feature ID="{c85e5759-f323-4efb-b548-443d2216efb5}" Name="FeatureDefinition/c85e5759-f323-4efb-b548-443d2216efb5" SourceVersion="14.0.0.0">
+          <Properties>
+            <Property Key="RegisterForms" Value="Forms\*.xsn" />
+            <Property Key="GloballyAvailable" Value="true" />
+          </Properties>
+        </Feature>
+        <!--NewsView_ListNewsView Feature-->
+        <Feature ID="{dc8bdf24-31b1-42a2-b107-464fe25ebe04}" Name="FeatureDefinition/dc8bdf24-31b1-42a2-b107-464fe25ebe04" SourceVersion="0.0.0.0" />
+        <!--Fields Feature-->
+        <Feature ID="{ca7bd552-10b1-4563-85b9-5ed1d39c962a}" Name="FeatureDefinition/ca7bd552-10b1-4563-85b9-5ed1d39c962a" SourceVersion="14.0.1.0" />
+        <!--NewsStaisticsWebParts_Feature2 Feature-->
+        <Feature ID="{742b3737-9641-45a5-a8b9-65fae888c5ce}" Name="FeatureDefinition/742b3737-9641-45a5-a8b9-65fae888c5ce" SourceVersion="0.0.0.0" />
+        <!--OffWFCommon Feature-->
+        <Feature ID="{c9c9515d-e4e2-4001-9050-74f980f93160}" Name="FeatureDefinition/c9c9515d-e4e2-4001-9050-74f980f93160" SourceVersion="14.0.1.0">
+          <Properties>
+            <Property Key="EnsureRootPublicLibrary" Value="true" />
+            <Property Key="RegisterForms" Value="Forms\*.xsn" />
+            <Property Key="GloballyAvailable" Value="true" />
+          </Properties>
+        </Feature>
+        <!--IssueTrackingWorkflow Feature-->
+        <Feature ID="{fde5d850-671e-4143-950a-87b473922dc7}" Name="FeatureDefinition/fde5d850-671e-4143-950a-87b473922dc7" SourceVersion="12.0.0.0" />
+        <!--NewsFeed_NewsFeedWebPart Feature-->
+        <Feature ID="{536fbe73-f651-47e4-b89f-8c0e67862c5a}" Name="FeatureDefinition/536fbe73-f651-47e4-b89f-8c0e67862c5a" SourceVersion="0.0.0.0" />
+        <!--PublishingLayouts Feature-->
+        <Feature ID="{d3f51be2-38a8-4e44-ba84-940d35be1566}" Name="FeatureDefinition/d3f51be2-38a8-4e44-ba84-940d35be1566" SourceVersion="14.0.5.0" />
+        <!--PublishingResources Feature-->
+        <Feature ID="{aebc918d-b20f-4a11-a1db-9ed84d79c87e}" Name="FeatureDefinition/aebc918d-b20f-4a11-a1db-9ed84d79c87e" SourceVersion="14.0.3.0" />
+        <!--WAWhatsPopularWebPart Feature-->
+        <Feature ID="{8e947bf0-fe40-4dff-be3d-a8b88112ade6}" Name="FeatureDefinition/8e947bf0-fe40-4dff-be3d-a8b88112ade6" SourceVersion="14.0.0.0" />
+        <!--WAMaster Feature-->
+        <Feature ID="{c04234f4-13b8-4462-9108-b4f5159beae6}" Name="FeatureDefinition/c04234f4-13b8-4462-9108-b4f5159beae6" SourceVersion="14.0.0.0" />
+        <!--RecordResources Feature-->
+        <Feature ID="{5bccb9a4-b903-4fd1-8620-b795fa33c9ba}" Name="FeatureDefinition/5bccb9a4-b903-4fd1-8620-b795fa33c9ba" SourceVersion="14.0.0.0" />
+        <!--BasicWebParts Feature-->
+        <Feature ID="{00bfea71-1c5e-4a24-b310-ba51c3eb7a57}" Name="FeatureDefinition/00bfea71-1c5e-4a24-b310-ba51c3eb7a57" SourceVersion="14.0.1.0" />
+        <!--NewsStaisticsWebParts_NewsestNews Feature-->
+        <Feature ID="{c47f0e5c-2271-464b-b8b0-bada971d2af9}" Name="FeatureDefinition/c47f0e5c-2271-464b-b8b0-bada971d2af9" SourceVersion="0.0.0.0" />
+        <!--EnterpriseWikiLayouts Feature-->
+        <Feature ID="{a942a218-fa43-4d11-9d85-c01e3e3a37cb}" Name="FeatureDefinition/a942a218-fa43-4d11-9d85-c01e3e3a37cb" SourceVersion="14.0.3.0" />
+        <!--WACustomReports Feature-->
+        <Feature ID="{af6d9aec-7c38-4dda-997f-cc1ddbb87c92}" Name="FeatureDefinition/af6d9aec-7c38-4dda-997f-cc1ddbb87c92" SourceVersion="14.0.0.0" />
+        <!--AccSrvSolutionGallery Feature-->
+        <Feature ID="{744b5fd3-3b09-4da6-9bd1-de18315b045d}" Name="FeatureDefinition/744b5fd3-3b09-4da6-9bd1-de18315b045d" SourceVersion="1.0.0.0" />
+        <!--AssetLibrary Feature-->
+        <Feature ID="{4bcccd62-dcaf-46dc-a7d4-e38277ef33f4}" Name="FeatureDefinition/4bcccd62-dcaf-46dc-a7d4-e38277ef33f4" SourceVersion="14.0.1.0" />
+        <!--NewsView_Feature1 Feature-->
+        <Feature ID="{1482dff1-fd18-4952-beae-fcf2f6785fd1}" Name="FeatureDefinition/1482dff1-fd18-4952-beae-fcf2f6785fd1" SourceVersion="0.0.0.0" />
       </SiteFeatures>
       <WebFeatures>
+        <!--NewsDataObjects_NewsFeedDataObjects Feature-->
+        <Feature ID="{fded780a-ac28-4194-8841-0869e61d12d2}" Name="FeatureDefinition/fded780a-ac28-4194-8841-0869e61d12d2" SourceVersion="0.0.0.0" />
+        <!--WebPageLibrary Feature-->
+        <Feature ID="{00bfea71-c796-4402-9f2f-0eb9a6e71b18}" Name="FeatureDefinition/00bfea71-c796-4402-9f2f-0eb9a6e71b18" SourceVersion="1.0.0.0" />
+        <!--IssuesList Feature-->
+        <Feature ID="{00bfea71-5932-4f9c-ad71-1557e5751100}" Name="FeatureDefinition/00bfea71-5932-4f9c-ad71-1557e5751100" SourceVersion="0.0.0.0" />
+        <!--PublishingWeb Feature-->
+        <Feature ID="{94c94ca6-b32f-4da9-a9e3-1f3d343d7ecb}" Name="FeatureDefinition/94c94ca6-b32f-4da9-a9e3-1f3d343d7ecb" SourceVersion="14.0.0.0" />
+        <!--WorkflowHistoryList Feature-->
+        <Feature ID="{00bfea71-4ea5-48d4-a4ad-305cf7030140}" Name="FeatureDefinition/00bfea71-4ea5-48d4-a4ad-305cf7030140" SourceVersion="0.0.0.0" />
+        <!--NewsDataObjects_NewsEventReceiver Feature-->
+        <Feature ID="{ed13712e-e3a3-4c99-9916-3af1d8f8dd08}" Name="FeatureDefinition/ed13712e-e3a3-4c99-9916-3af1d8f8dd08" SourceVersion="0.0.0.0" />
+        <!--NewsDataObjects_WorkItemEventRerceiver Feature-->
+        <Feature ID="{048fa685-90c7-4168-82ff-3bd4d410cdfe}" Name="FeatureDefinition/048fa685-90c7-4168-82ff-3bd4d410cdfe" SourceVersion="0.0.0.0" />
+        <!--NewsDataObjects_SubscriptionJob Feature-->
+        <Feature ID="{d2d02c28-8a56-4170-9b35-4049c720438b}" Name="FeatureDefinition/d2d02c28-8a56-4170-9b35-4049c720438b" SourceVersion="0.0.0.0" />
+        <!--NoCodeWorkflowLibrary Feature-->
+        <Feature ID="{00bfea71-f600-43f6-a895-40c0de7b0117}" Name="FeatureDefinition/00bfea71-f600-43f6-a895-40c0de7b0117" SourceVersion="0.0.0.0" />
+        <!--SurveysList Feature-->
+        <Feature ID="{00bfea71-eb8a-40b1-80c7-506be7590102}" Name="FeatureDefinition/00bfea71-eb8a-40b1-80c7-506be7590102" SourceVersion="1.0.0.0" />
+        <!--GridList Feature-->
+        <Feature ID="{00bfea71-3a1d-41d3-a0ee-651d11570120}" Name="FeatureDefinition/00bfea71-3a1d-41d3-a0ee-651d11570120" SourceVersion="1.0.0.0" />
+        <!--Publishing Feature-->
+        <Feature ID="{22a9ef51-737b-4ff2-9346-694633fe4416}" Name="FeatureDefinition/22a9ef51-737b-4ff2-9346-694633fe4416" SourceVersion="14.0.0.0" />
+        <!--GanttTasksList Feature-->
+        <Feature ID="{00bfea71-513d-4ca0-96c2-6a47775c0119}" Name="FeatureDefinition/00bfea71-513d-4ca0-96c2-6a47775c0119" SourceVersion="0.0.0.0" />
+        <!--LinksList Feature-->
+        <Feature ID="{00bfea71-2062-426c-90bf-714c59600103}" Name="FeatureDefinition/00bfea71-2062-426c-90bf-714c59600103" SourceVersion="1.0.0.0" />
+        <!--MobilityRedirect Feature-->
+        <Feature ID="{f41cc668-37e5-4743-b4a8-74d1db3fd8a4}" Name="FeatureDefinition/f41cc668-37e5-4743-b4a8-74d1db3fd8a4" SourceVersion="1.0.0.0" />
+        <!--workflowProcessList Feature-->
+        <Feature ID="{00bfea71-2d77-4a75-9fca-76516689e21a}" Name="FeatureDefinition/00bfea71-2d77-4a75-9fca-76516689e21a" SourceVersion="1.0.0.0" />
+        <!--TasksList Feature-->
+        <Feature ID="{00bfea71-a83e-497e-9ba0-7a5c597d0107}" Name="FeatureDefinition/00bfea71-a83e-497e-9ba0-7a5c597d0107" SourceVersion="1.0.0.0" />
+        <!--TeamCollab Feature-->
+        <Feature ID="{00bfea71-4ea5-48d4-a4ad-7ea5c011abe5}" Name="FeatureDefinition/00bfea71-4ea5-48d4-a4ad-7ea5c011abe5" SourceVersion="14.0.0.0" />
+        <!--AnnouncementsList Feature-->
+        <Feature ID="{00bfea71-d1ce-42de-9c63-a44004ce0104}" Name="FeatureDefinition/00bfea71-d1ce-42de-9c63-a44004ce0104" SourceVersion="1.0.0.0" />
+        <!--ObaSimpleSolution Feature-->
+        <Feature ID="{d250636f-0a26-4019-8425-a5232d592c01}" Name="FeatureDefinition/d250636f-0a26-4019-8425-a5232d592c01" SourceVersion="14.0.0.0" />
+        <!--PictureLibrary Feature-->
+        <Feature ID="{00bfea71-52d4-45b3-b544-b1c71b620109}" Name="FeatureDefinition/00bfea71-52d4-45b3-b544-b1c71b620109" SourceVersion="1.0.0.0" />
+        <!--ContactsList Feature-->
+        <Feature ID="{00bfea71-7e6d-4186-9ba8-c047ac750105}" Name="FeatureDefinition/00bfea71-7e6d-4186-9ba8-c047ac750105" SourceVersion="1.0.0.0" />
+        <!--CustomList Feature-->
+        <Feature ID="{00bfea71-de22-43b2-a848-c05709900100}" Name="FeatureDefinition/00bfea71-de22-43b2-a848-c05709900100" SourceVersion="1.0.0.0" />
+        <!--DocumentLibrary Feature-->
+        <Feature ID="{00bfea71-e717-4e80-aa17-d0c71b360101}" Name="FeatureDefinition/00bfea71-e717-4e80-aa17-d0c71b360101" SourceVersion="1.0.0.0" />
+        <!--DiscussionsList Feature-->
+        <Feature ID="{00bfea71-6a49-43fa-b535-d15c05500108}" Name="FeatureDefinition/00bfea71-6a49-43fa-b535-d15c05500108" SourceVersion="1.0.0.0" />
+        <!--NewsDataObjects_SubscriptionWorkItemJob Feature-->
+        <Feature ID="{34428011-371b-487e-92ed-d7bd05608df0}" Name="FeatureDefinition/34428011-371b-487e-92ed-d7bd05608df0" SourceVersion="0.0.0.0" />
+        <!--NewsDataObjects_SubscribtionDataObjects Feature-->
+        <Feature ID="{33443aff-cce8-41e0-a449-d9e044bfe195}" Name="FeatureDefinition/33443aff-cce8-41e0-a449-d9e044bfe195" SourceVersion="0.0.0.0" />
+        <!--DataSourceLibrary Feature-->
+        <Feature ID="{00bfea71-f381-423d-b9d1-da7a54c50110}" Name="FeatureDefinition/00bfea71-f381-423d-b9d1-da7a54c50110" SourceVersion="0.0.0.0" />
+        <!--DataConnectionLibrary Feature-->
+        <Feature ID="{00bfea71-dbd7-4f72-b8cb-da7ac0440130}" Name="FeatureDefinition/00bfea71-dbd7-4f72-b8cb-da7ac0440130" SourceVersion="14.0.0.0" />
+        <!--ExternalList Feature-->
+        <Feature ID="{00bfea71-9549-43f8-b978-e47e54a10600}" Name="FeatureDefinition/00bfea71-9549-43f8-b978-e47e54a10600" SourceVersion="1.0.0.0" />
+        <!--EventsList Feature-->
+        <Feature ID="{00bfea71-ec85-4903-972d-ebe475780106}" Name="FeatureDefinition/00bfea71-ec85-4903-972d-ebe475780106" SourceVersion="3.0.0.0" />
+        <!--XmlFormLibrary Feature-->
+        <Feature ID="{00bfea71-1e1d-4562-b56a-f05371bb0115}" Name="FeatureDefinition/00bfea71-1e1d-4562-b56a-f05371bb0115" SourceVersion="0.0.0.0" />
+        <!--List Feature-->
+        <Feature ID="{52b4fee3-8640-40ea-b275-77763979abbf}" Name="List Feature">
+          <Properties>
+            <Property Key="GeneratedBySaveAsTemplate" Value="1" />
+          </Properties>
+        </Feature>
+        <!--Module Feature-->
+        <Feature ID="{e4ff6be9-37be-4a49-96a7-08619de45251}" Name="Module Feature">
+          <Properties>
+            <Property Key="GeneratedBySaveAsTemplate" Value="1" />
+          </Properties>
+        </Feature>
+        <!--Web EventReceivers Feature-->
+        <Feature ID="{a848c9b1-cf1c-4985-86ec-3ae299865e1e}" Name="Web EventReceivers Feature">
+          <Properties>
+            <Property Key="GeneratedBySaveAsTemplate" Value="1" />
+          </Properties>
+        </Feature>
+        <!--Property Bag Feature-->
+        <Feature ID="{c4233a19-74a1-49c4-bc8c-b932adb6eb76}" Name="Property Bag Feature">
+          <Properties>
+            <Property Key="GeneratedBySaveAsTemplate" Value="1" />
+          </Properties>
+        </Feature>
       </WebFeatures>
       <Modules>
         <Module Name="DefaultBlank" />

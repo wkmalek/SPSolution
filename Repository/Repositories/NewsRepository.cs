@@ -30,8 +30,7 @@ namespace Repository.Repositories
             DateTime siteCreated = context.GetSiteCreatedDate();
             TimeSpan span = DateTime.Now.Subtract(siteCreated);
             int siteLifetime = span.Days;
-            return newsCount / siteLifetime;
-
+            return (float)newsCount / (float)siteLifetime;
         }
 
         public int GetNewsCount()

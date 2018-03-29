@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="d2d02c28-8a56-4170-9b35-4049c720438b" ReceiverAssembly="NewsFeedWP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=10ad000354663770" ReceiverClass="NewsFeedWP.Features.SubscriptionJob.SubscriptionJobEventReceiver" Scope="Web" Title="NewsDataObjects SubscriptionJob"></Feature>

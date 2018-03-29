@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="048fa685-90c7-4168-82ff-3bd4d410cdfe" Scope="Web" Title="WorkItemEventReceiver">
+  <ElementManifests>
+    <ElementManifest Location="NewDataWorkItemER\Elements.xml" />
+  </ElementManifests>
+</Feature>

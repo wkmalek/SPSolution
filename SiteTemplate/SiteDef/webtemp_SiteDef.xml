@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Templates xmlns:ows="Microsoft SharePoint">
-  <Template Name="SiteDef" ID="10000">
-    <Configuration ID="0" Title="SiteDef" Hidden="FALSE" ImageUrl="/_layouts/images/CPVW.gif" Description="SiteDef" DisplayCategory="SharePoint Customizations">
+  <Template Name="SiteDef" ID="10001">
+    <Configuration ID="0" Title="SiteDef" Hidden="FALSE" ImageUrl="/_layouts/images/CPVW.gif" Description="My site definition" DisplayCategory="SharePoint Customizations">
     </Configuration>
   </Template>
 </Templates>

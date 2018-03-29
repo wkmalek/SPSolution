@@ -10,6 +10,6 @@
 <asp:HyperLink runat="server" NavigateUrl= "~/default.aspx"><asp:Label runat="server" Text="All"/><br></asp:HyperLink>
 <asp:Repeater runat="server" ID="Repeater">
     <ItemTemplate>
-        <asp:HyperLink runat="server" NavigateUrl='<%# "~/default.aspx?Category=" + Eval("[\"Category\"]") %>'><asp:Label runat="server" Text='<%# Eval("[\"Category\"]") %>'/><br></asp:HyperLink>
+        <asp:HyperLink runat="server" NavigateUrl='<%# "~/default.aspx?Category=" + Eval("[\"CategoryName\"]") %>'><asp:Label runat="server" Text='<%# Eval("[\"CategoryName\"]") %>'/><br></asp:HyperLink>
     </ItemTemplate>
 </asp:Repeater>

@@ -52,6 +52,12 @@
     <Reference Include="Microsoft.SharePoint" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\SubscriptionJob\SubscriptionJob.EventReceiver.cs">
+      <DependentUpon>SubscriptionJob.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\SubscriptionWorkItemJob\SubscriptionWorkItemJob.EventReceiver.cs">
+      <DependentUpon>SubscriptionWorkItemJob.feature</DependentUpon>
+    </Compile>
     <Compile Include="List\NewsList\News.aspx.cs">
       <DependentUpon>News.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -142,6 +148,12 @@
     </None>
     <None Include="ContentTypes\Subscriber\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{f22f29c0-5030-49a4-87c7-54598eb4377e}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\SubscriptionWorkItemJob\SubscriptionWorkItemJob.feature">
+      <FeatureId>{01e1e0a1-e22a-44b2-af67-617082313c0b}</FeatureId>
+    </None>
+    <None Include="Features\SubscriptionJob\SubscriptionJob.feature">
+      <FeatureId>{a80ea68a-0db5-4357-ad74-d78368360401}</FeatureId>
     </None>
     <None Include="Features\NewsEventReceiver\NewsEventReceiver.feature">
       <FeatureId>{470be8a0-8a6f-43b8-b374-3550c1bcca44}</FeatureId>
@@ -236,6 +248,12 @@
     <Content Include="ContentTypes\ScienceNews\Elements.xml" />
     <Content Include="ContentTypes\SubscribeElement\Elements.xml" />
     <Content Include="ContentTypes\Subscriber\Elements.xml" />
+    <Content Include="Features\SubscriptionWorkItemJob\SubscriptionWorkItemJob.Template.xml">
+      <DependentUpon>SubscriptionWorkItemJob.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SubscriptionJob\SubscriptionJob.Template.xml">
+      <DependentUpon>SubscriptionJob.feature</DependentUpon>
+    </Content>
     <Content Include="Features\NewsEventReceiver\NewsEventReceiver.Template.xml">
       <DependentUpon>NewsEventReceiver.feature</DependentUpon>
     </Content>
